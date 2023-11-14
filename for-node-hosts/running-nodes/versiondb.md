@@ -2,7 +2,7 @@
 
 ### Overview
 
-Anyone that has been running archive nodes for a while, is familiar with the issue of the ever growing disk size of their nodes. For Cronos, the IAVL database of archived nodes, the `application.db` usually grows, but does not shrink. A solution that we have come up with is to replace the current RocksDB with `VersionDB`.
+Anyone that has been running archive nodes for a while, is familiar with the issue of the ever growing disk size of their nodes. For Planq, the IAVL database of archived nodes, the `application.db` usually grows, but does not shrink. A solution that we have come up with is to replace the current RocksDB with `VersionDB`.
 
 `VersionDB` stores multiple versions of on-chain state key-value pairs, without using a merkelized tree structure like IAVL tree, making both DB size and query performance much better than IAVL trees. However, VersionDB does not perform root hash and Merkle proof generation, so for those features we still need the IAVL tree. Grpc queries don't need to support proof generation, so VersionDB alone is enough to support this. Currently the `--grpc-only` flag for one to start a standalone grpc query service.
 
@@ -23,7 +23,7 @@ The limitations of the setup with VersionDB and pruned IAVL tree are:
 
 #### Step 1 - Extract from snapshot
 
-Download the archive snapshot from either Quicksync or from the [S3 link](https://cronos-mainnet-fullnode-datadir-backup-external-user.s3.ap-southeast-1.amazonaws.com/data/cronosmainnet\_25-1-versiondb-archive-20230810.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAU2KFOQGWRLYDYR3A%2F20230815%2Fap-southeast-1%2Fs3%2Faws4\_request\&X-Amz-Date=20230815T020338Z\&X-Amz-Expires=604800\&X-Amz-SignedHeaders=host\&X-Amz-Signature=9edc36d26ec7d21f61c9a2d8e8ce12321a769a736bc61858955649a9e3733f24) we have provided. After you have extracted the `.tar` into your `$NODE_HOME/data/versiondb` folder, you can continue to update config and restart.
+Download the archive snapshot from either Snapshot or from the [S3 link](https://cronos-mainnet-fullnode-datadir-backup-external-user.s3.ap-southeast-1.amazonaws.com/data/cronosmainnet\_25-1-versiondb-archive-20230810.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAU2KFOQGWRLYDYR3A%2F20230815%2Fap-southeast-1%2Fs3%2Faws4\_request\&X-Amz-Date=20230815T020338Z\&X-Amz-Expires=604800\&X-Amz-SignedHeaders=host\&X-Amz-Signature=9edc36d26ec7d21f61c9a2d8e8ce12321a769a736bc61858955649a9e3733f24) we have provided. After you have extracted the `.tar` into your `$NODE_HOME/data/versiondb` folder, you can continue to update config and restart.
 
 #### Step 2 - **Update config**
 
@@ -58,14 +58,14 @@ We will be following the following workflow:
 
 #### Step 0
 
-* Update your binary and stop cronosd.&#x20;
+* Update your binary and stop planqd.&#x20;
 
 #### Step 1 - extract changesets
 
 * (Optional) get the end-version before extracting changeset
 
 ```bash
-ulimit -n 60000 # python-iavl and cronosd changeset subcommand open many files
+ulimit -n 60000 # python-iavl and planqd changeset subcommand open many files
 export MAXIMUM_VERSION=$(nix run github:crypto-com/python-iavl/main -- commit-infos --db /chain/.chain-maind/data/application.db/ | head -n 1 | awk '{ print $2 }')
 export END_VERSION=$((MAXIMUM_VERSION + 1))
 ```
@@ -75,8 +75,8 @@ export END_VERSION=$((MAXIMUM_VERSION + 1))
   Time taken: around 4 days (512G RAM, r6g.16xlarge) for an archive node
 
 ```bash
-$ /chain/.cronosd/cosmovisor/current/bin/cronosd changeset dump /s3-upload/data \
---home /chain/.cronosd --end-version $END_VERSION --concurrency 128
+$ /chain/.planqd/cosmovisor/current/bin/planqd changeset dump /s3-upload/data \
+--home /chain/.planqd --end-version $END_VERSION --concurrency 128
 ```
 
 * **Verify Change Sets**\
@@ -87,11 +87,11 @@ $ /chain/.cronosd/cosmovisor/current/bin/cronosd changeset dump /s3-upload/data 
 set -e
 set +o pipefail
 
-MAXIMUM_VERSION=$(nix run github:crypto-com/python-iavl/main -- commit-infos --db /chain/.cronosd/data/application.db/ | head -n 1 | awk '{ print $2 }')
-stores=($(/chain/.cronosd/cosmovisor/current/bin/cronosd changeset default-stores --home /chain/.cronosd/))
+MAXIMUM_VERSION=$(nix run github:crypto-com/python-iavl/main -- commit-infos --db /chain/.planqd/data/application.db/ | head -n 1 | awk '{ print $2 }')
+stores=($(/chain/.planqd/cosmovisor/current/bin/planqd changeset default-stores --home /chain/.planqd/))
 for i in "${stores[@]}"
 do
-  if [[ "$(nix run github:crypto-com/python-iavl/eb75df9 -- root-hash --db /chain/.cronosd/data/application.db/ --store $i --version $MAXIMUM_VERSION | awk '{print $2}')" == "$(/chain/.cronosd/cosmovisor/current/bin/cronosd changeset verify /s3-upload/changeset --stores $i | tail -1 | jq -r ".storeInfos[] | select(.name == \\"$i\\") | .commitId.hash" | base64 -d | xxd -p -c 32)" ]]; then
+  if [[ "$(nix run github:crypto-com/python-iavl/eb75df9 -- root-hash --db /chain/.planqd/data/application.db/ --store $i --version $MAXIMUM_VERSION | awk '{print $2}')" == "$(/chain/.planqd/cosmovisor/current/bin/planqd changeset verify /s3-upload/changeset --stores $i | tail -1 | jq -r ".storeInfos[] | select(.name == \\"$i\\") | .commitId.hash" | base64 -d | xxd -p -c 32)" ]]; then
       echo "$i store is verified"
   else
       echo  "$i store has issue"
@@ -107,10 +107,10 @@ done
 #### Step 2 - **Build VersionDB**
 
 ```bash
-./chain/.cronosd/cosmovisor/current/bin/cronosd changeset build-versiondb-sst \
+./chain/.planqd/cosmovisor/current/bin/planqd changeset build-versiondb-sst \
 /s3-upload/data /s3-upload/sst
 
-./chain/.cronosd/cosmovisor/current/bin/cronosd changeset ingest-versiondb-sst \
+./chain/.planqd/cosmovisor/current/bin/planqd changeset ingest-versiondb-sst \
 /s3-upload/versiondb /s3-upload/sst/*.sst --move-files --maximum-version $MAXIMUM_VERSION
 
 ```
@@ -125,9 +125,9 @@ Restore the IAVL tree. The restored `application.db` migration commands don't co
 
 ```bash
 # create memiavl snapshot
-$ /chain/.cronosd/cosmovisor/current/bin/cronosd changeset verify /s3-upload/data --save-snapshot /s3-upload/snapshot
+$ /chain/.planqd/cosmovisor/current/bin/planqd changeset verify /s3-upload/data --save-snapshot /s3-upload/snapshot
 # restore application.db
-$ /chain/.cronosd/cosmovisor/current/bin/cronosd changeset restore-app-db /s3-upload/snapshot /s3-upload/application.db
+$ /chain/.planqd/cosmovisor/current/bin/planqd changeset restore-app-db /s3-upload/snapshot /s3-upload/application.db
 ```
 
 time taken: around x hour
@@ -153,22 +153,22 @@ Restart the node. it should start to reindex iavl fastnode now.
 
 
 
-### Results on Cronos
+### Results on Planq
 
-On Cronos, we noticed disk size reductions around \~**`63%`** for a Cronos archive node. Of course the reuctions that you will see, depend from case to case, but as you can see there's a good improvement in disk size reduction to be gained when moving to versionDB.
+On Planq, we noticed disk size reductions around \~**`63%`** for a Planq archive node. Of course the reuctions that you will see, depend from case to case, but as you can see there's a good improvement in disk size reduction to be gained when moving to versionDB.
 
 `Rocksdb archive node`
 
 ```bash
-$ du -hd1 /chain/.cronosd/data/
-1.6T /chain/.cronosd/data/application.db
-103G /chain/.cronosd/data/blockstore.db
-1.1G /chain/.cronosd/data/cs.wal
-121M /chain/.cronosd/data/evidence.db
-114M /chain/.cronosd/data/snapshots
-163G /chain/.cronosd/data/state.db
-462G /chain/.cronosd/data/tx_index.db
-2.3T /chain/.cronosd/data/
+$ du -hd1 /chain/.planqd/data/
+1.6T /chain/.planqd/data/application.db
+103G /chain/.planqd/data/blockstore.db
+1.1G /chain/.planqd/data/cs.wal
+121M /chain/.planqd/data/evidence.db
+114M /chain/.planqd/data/snapshots
+163G /chain/.planqd/data/state.db
+462G /chain/.planqd/data/tx_index.db
+2.3T /chain/.planqd/data/
 ```
 
 
@@ -176,14 +176,14 @@ $ du -hd1 /chain/.cronosd/data/
 `Versiondb archive node`
 
 ```bash
-du -hd1 /chain/.cronosd/data/
-82G /chain/.cronosd/data/application.db
-104G /chain/.cronosd/data/blockstore.db
-26G /chain/.cronosd/data/versiondb
-1.1G /chain/.cronosd/data/cs.wal
-115M /chain/.cronosd/data/evidence.db
-112M /chain/.cronosd/data/snapshots
-163G /chain/.cronosd/data/state.db
-463G /chain/.cronosd/data/tx_index.db
-837G /chain/.cronosd/data/
+du -hd1 /chain/.planqd/data/
+82G /chain/.planqd/data/application.db
+104G /chain/.planqd/data/blockstore.db
+26G /chain/.planqd/data/versiondb
+1.1G /chain/.planqd/data/cs.wal
+115M /chain/.planqd/data/evidence.db
+112M /chain/.planqd/data/snapshots
+163G /chain/.planqd/data/state.db
+463G /chain/.planqd/data/tx_index.db
+837G /chain/.planqd/data/
 ```

@@ -54,9 +54,9 @@ Learn more about the [structure of manifest.yml](https://docs.flair.dev/referenc
 
 :::
 
-2️⃣ Configure Cronos RPC nodes
+2️⃣ Configure Planq RPC nodes
 
-Set a unique namespace, Cronos chainId and RPC endpoint in your config. Remember that you can add up to 10 RPC endpoints for resiliency.
+Set a unique namespace, Planq chainId and RPC endpoint in your config. Remember that you can add up to 10 RPC endpoints for resiliency.
 
 ```
 {
@@ -72,7 +72,7 @@ Set a unique namespace, Cronos chainId and RPC endpoint in your config. Remember
         # Highly-recommended to have at least 1 websocket endpoint
         "wss://XXX",
         # You can put multiple endpoints for failover
-        "https://evm.cronos.org"
+        "https://evm-rpc.planq.network"
       ]
     }
   ]

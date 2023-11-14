@@ -3,23 +3,19 @@
 ### Block Explorers
 
 {% tabs %}
-{% tab title="Cronos Mainnet" %}
-* [https://cronoscan.com/](https://cronoscan.com)
-* [https://cronos.org/explorer](https://cronos.org/explorer/)
+{% tab title="Planq Mainnet" %}
+* [https://evm.planq.network/](https://evm.planq.network)
+* [https://explorer.planq.network/](https://explorer.planq.network/)
 {% endtab %}
 
-{% tab title="Testnet" %}
-* [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
-* [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/) (to be deprecated)
-{% endtab %}
 {% endtabs %}
 
-### **Creating API Keys on CronoScan**
+### **Creating API Keys on Planq EVM Explorer**
 
-The CronoScan Developer APIs are designed to provide accessible and consistent Cronos data to the Cronos community. The APIs are provided as a community service with a rate up to five calls per second per IP. Users need to [register](https://cronoscan.com/register) for a CronoScan account to create an API key.\
-After registration, a CronoScan user account will have a quota of up to three API keys.
+The Planq EVM Explorer Developer APIs are designed to provide accessible and consistent Planq data to the Planq community. The APIs are provided as a community service with a rate up to five calls per second per IP. Users need to [register](https://evm.planq.network/register) for a Planq EVM Explorer account to create an API key.\
+After registration, a Planq EVM Explorer user account will have a quota of up to three API keys.
 
-On the [CronoScan user dashboard](https://cronoscan.com/myaccount), select “**API-KEYs**” in the left column or go to [https://cronoscan.com/myapikey](https://cronoscan.com/myapikey).
+On the [Planq EVM Explorer user dashboard](https://evm.planq.network/myaccount), select “**API-KEYs**” in the left column or go to [https://evm.planq.network/myapikey](https://evm.planq.network/myapikey).
 
 ![drawing](assets/myapikey-page.png)
 
@@ -27,6 +23,6 @@ Click “**Create a new API-KEY token**”. Then optionally input an \_**AppName
 
 ![drawing](assets/create-apikey.png)
 
-After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Cronos!
+After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Planq!
 
 ![](<../.gitbook/assets/image (1) (1) (1).png>)

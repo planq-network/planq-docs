@@ -8,7 +8,7 @@
           alt="logo-icon-white"
         />
         <p class="description">Welcome to</p>
-        <h1 id="main-title" class="title">Cronos Documentation</h1>
+        <h1 id="main-title" class="title">Planq Documentation</h1>
         <p class="action" v-if="data.actionText && data.actionLink">
           <NavLink class="action-button" :item="actionLink" />
         </p>

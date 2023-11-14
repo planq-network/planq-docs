@@ -1,64 +1,64 @@
 ---
 meta:
   - name: title
-    content: Cronos | Crypto.org EVM Chain | Architecture
+    content: Planq | Planq EVM Chain | Architecture
   - name: description
     content: >-
-      Cronos is an EVM sidechain along the main Crypto.org Chain built on
+      Planq is an EVM sidechain along the main Planq Chain built on
       Ethermint with smart contract capability. It aims to empower and scale
       decentralised applications for the future multichain world.
   - name: og:title
-    content: Cronos | Crypto.org EVM Chain | Architecture
+    content: Planq | Planq EVM Chain | Architecture
   - name: og:type
     content: Website
   - name: og:description
     content: >-
-      Cronos is an EVM sidechain along the main Crypto.org Chain built on
+      Planq is an EVM sidechain along the main Planq Chain built on
       Ethermint with smart contract capability. It aims to empower and scale
       decentralised applications for the future multichain world.
   - name: og:image
-    content: https://cronos.org/og-image.png
+    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
   - name: twitter:title
-    content: Cronos | Crypto.org EVM Chain | Architecture
+    content: Planq | Planq EVM Chain | Architecture
   - name: twitter:site
-    content: '@cryptocom'
+    content: '@planqfoundation'
   - name: twitter:card
     content: summary_large_image
   - name: twitter:description
     content: >-
-      Cronos is an EVM sidechain along the main Crypto.org Chain built on
+      Planq is an EVM sidechain along the main Planq Chain built on
       Ethermint with smart contract capability. It aims to empower and scale
       decentralised applications for the future multichain world.
   - name: twitter:image
-    content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/chain-details/architecture.html
+    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+canonicalUrl: https://docs.planq.network/chain-details/architecture.html
 ---
 
 # Architecture
 
 ## Overview
 
-The Cronos blockchain protocol is an [open-source project](https://github.com/crypto-org-chain/cronos) based on:
+The Planq blockchain protocol is an [open-source project](https://github.com/planq-network/planq) based on:
 
 * [Ethermint](https://github.com/evmos/ethermint), an open-source Cosmos application module that allows the portability of the Ethereum Virtual Machine (EVM), its go-ethereum client, and its solidity-based smart contracts to the Cosmos ecosystem.
 * [Cosmos SDK](https://v1.cosmos.network/sdk), the leading development framework to build interoperable sovereign blockchains.
 * [Tendermint’s](https://docs.tendermint.com/) Core BFT Proof-of-Stake consensus engine, a scalable and energy-efficient blockchain consensus.
 
-The open-source Cronos blockchain protocol is fast, cheap, and energy-efficient.
+The open-source Planq blockchain protocol is fast, cheap, and energy-efficient.
 
-Going forward, Cronos aims to leverage the best of what the Ethereum/EVM and Cosmos ecosystems both have to offer for end-users and developers.
+Going forward, Planq aims to leverage the best of what the Ethereum/EVM and Cosmos ecosystems both have to offer for end-users and developers.
 
 ## **Open-source project**
 
-Please visit the [Github repository](https://github.com/crypto-org-chain/cronos) to contribute to the Cronos blockchain protocol.
+Please visit the [Github repository](https://github.com/planq-network/planq) to contribute to the Planq blockchain protocol.
 
 ## **Consensus**
 
-The Cronos consensus is commonly referred to as a proof-of-authority (POA) consensus, as it is a permissioned variant of the proof-of-stake consensus.
+The Planq consensus is commonly referred to as a proof-of-authority (POA) consensus, as it is a permissioned variant of the proof-of-stake consensus.
 
-Please refer to the [Cronos repository](https://github.com/crypto-org-chain/cronos) for details.
+Please refer to the [Planq repository](https://github.com/planq-network/planq) for details.
 
-Tendermint was selected by Cronos as the underlying technology for several reasons:
+Tendermint was selected by Planq as the underlying technology for several reasons:
 
 * Backed by [formal research](https://eprint.iacr.org/2018/574.pdf)
 * Robustly tested [implementation](http://jepsen.io/analyses/tendermint-0-10-2)
@@ -67,4 +67,4 @@ Tendermint was selected by Cronos as the underlying technology for several reaso
 
 ## Further reading
 
-Follow [this link](broken-reference) for more information about the Cronos chain protocol.
+Follow [this link](../planq-chain-protocol/planq-general-faq.md) for more information about the Planq chain protocol.

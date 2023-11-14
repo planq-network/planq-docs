@@ -1,331 +1,216 @@
----
-meta:
-  - name: title
-    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: description
-    content: >-
-      Learn how to compile and run the latest development version of Cronos
-      testnet from scratch. This page is for building and running the latest
-      development version of the chain for testing purpose only.
-  - name: og:title
-    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: og:type
-    content: Website
-  - name: og:description
-    content: >-
-      Learn how to compile and run the latest development version of Cronos
-      testnet from scratch. This page is for building and running the latest
-      development version of the chain for testing purpose only.
-  - name: og:image
-    content: https://cronos.org/og-image.png
-  - name: twitter:title
-    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: twitter:site
-    content: '@cryptocom'
-  - name: twitter:card
-    content: summary_large_image
-  - name: twitter:description
-    content: >-
-      Learn how to compile and run the latest development version of Cronos
-      testnet from scratch. This page is for building and running the latest
-      development version of the chain for testing purpose only.
-  - name: twitter:image
-    content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/local-devnet.html
----
+<!--
+order: 2
+-->
 
-# Devnet
+# Multi Node
 
-{% hint style="warning" %}
-CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
+## Pre-requisite Readings
 
-For anyone interested in joining the Cronos testnet, please refer to our public testnet documentation which will be released shortly.
-{% endhint %}
+- [Install Ignite CLI](https://docs.ignite.com/guide/install.html)  {prereq}
+- [Install Docker](https://docs.docker.com/engine/installation/)  {prereq}
+- [Install docker-compose](https://docs.docker.com/compose/install/)  {prereq}
 
-By following this tutorial, you can compile and run the latest development version of Cronos testnet from scratch. It is intended for testing purpose only.
+## Automated Localnet with Ignite CLI
 
-## Overview
-
-The first option is to use [pystarport](https://github.com/crypto-org-chain/chain-main/tree/master/pystarport), a dedicated script similar to [cosmos starport](https://github.com/tendermint/starport), but without the scaffolding feature to build a local development network with multiple validators. Another option is to use a shell script `init.sh` to build a local development network with a single validator.
-
-## Pre-requisites
-
-### Option 1. Using `pystarport`
-
-* Python > 3.7.3
-* [cronosd](https://github.com/crypto-org-chain/cronos)
-
-To install pystarport, run:
-
-```
-$ git clone https://github.com/crypto-org-chain/cronos.git
-$ cd cronos
-$ pip3 install pystarport
-```
-
-### Option 2. Using Shell script
-
-Install the binded version, which install cronosd together, and find it by the absolute path:
-
-```
-git clone https://github.com/crypto-org-chain/cronos
-cd cronos
-make install
-```
-
-Afterward, you can verify that by
+Once you have installed `ignite`, just run the localnet by using
 
 ```bash
-$ cronosd -h
+ignite chain serve 
 ```
 
-and also you can check the version of the cronosd to see if it is built with the later commit:
+Detailed instructions can be found in the [Ignite CLI documentation](https://docs.ignite.com/kb/serve.html)
+
+## Automated Localnet with Docker
+
+### Build & Start
+
+To build start a 4 node testnet run:
 
 ```bash
-$ cronosd version
-[version-g<commit_hash>]
+make localnet-start
 ```
 
-## Step 1. Customize your devnet
+This command creates a 4-node network using the `planqdnode` Docker image.
+The ports for each node are found in this table:
 
-_Note_: You can skip this section and start a local devnet without customization.
+| Node ID          | P2P Port | Tendermint RPC Port | REST/ Ethereum JSON-RPC Port | WebSocket Port |
+|------------------|----------|---------------------|------------------------------|----------------|
+| `planqnode0` | `26656`  | `26657`             | `8545`                       | `8546`         |
+| `planqnode1` | `26659`  | `26660`             | `8547`                       | `8548`         |
+| `planqnode2` | `26661`  | `26662`             | `8549`                       | `8550`         |
+| `planqnode3` | `26663`  | `26664`             | `8551`                       | `8552`         |
 
-### Option 1. Using `pystarport`
-
-You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for example:
-
-```yaml
-  cronos_777-1:                   # change the chain-id
-      json-rpc:
-      address: "0.0.0.0:8545"     # change the JSON-RPC address and port
-      ws-address: "0.0.0.0:8546"  # change the JSON-RPC websocket address and port
-      api: "eth,net,web3,debug"
-.......
-  accounts:
-    - name: community
-      coins: 10000000000000000000000basetcro
-      mnemonic: ${COMMUNITY_MNEMONIC}
-    - name: signer1
-      coins: 20000000000000000000000basetcro
-      mnemonic: ${SIGNER1_MNEMONIC}
-    - name: signer2
-      coins: 30000000000000000000000basetcro
-      mnemonic: ${SIGNER2_MNEMONIC}
-```
-
-The default configuration will give us two devnet validators with the chain-id `cronos_777-1`; three accounts `community`, `signer1` and `signer2` with some allocated funds at the genesis.
-
-### Option 2. Using Shell script
-
-You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init\_cronos\_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
-
-```yaml
-### customize the name of your key, the chain-id and moniker of the node ###
-  KEY="mykey"
-  CHAINID="cronos_777-1"
-  MONIKER="localtestnet"
-.......
-### specify the default keyring back-backend to be 'test' for convenience ###
-  cronosd config keyring-backend test
-  cronosd config chain-id $CHAINID
-.......
-# Allocate genesis accounts (cosmos formatted addresses)
-  cronosd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
-# Sign genesis transaction
-  cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
-```
-
-The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
-
-## Step 2. Start the devnet
-
-Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
-
-### Option 1. Using `pystarport`
+To update the binary, just rebuild it and restart the nodes
 
 ```bash
-$ pystarport serve --config ./scripts/cronos-devnet.yaml
+make localnet-start
 ```
 
-Afterwards, keys will be generated according to the configuration specified, the accounts' information is generated in `data/cronos_777-1/accounts.json`, for example:
-
-```json
-[
-  {"name": "validator", "type": "local", "address": "crc12luku6uxehhak02py4rcz65zu0swh7wjsrw0pp", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"Am5xCmKjQt4O1NfEUy3Ly7r78ZZS7WeyN++rcOiyB++s\"}"}, 
-  {"name": "validator", "type": "local", "address": "crc18z6q38mhvtsvyr5mak8fj8s8g4gw7kjjtsgrn7", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"AkJ4WnUHRFLWKmrCInD/uPsByTddC6coh66ADcYZMV0b\"}"}, 
-  {"name": "community", "type": "local", "address": "crc1czp5lh3ke85rruvg0vawec02perp2ul678x46r", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"ApQozcgkbLxyWF5VYXBG7EY+R9p0IcyqngqaOz7FPJib\"}", "mnemonic": "figure outdoor option kitten force avocado hair rug shoulder win engage coconut record lounge insane royal crime powder dwarf monster car thing bench bamboo"}, 
-  {"name": "signer1", "type": "local", "address": "crc1gt7cfua508jfexuf9ea4536sdqkv62dsxxalc2", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"A/93qfsXgEexTmtrkcq+LtFfclUU3FjyJuOVeCR+qi/1\"}", "mnemonic": "pencil shrug wire extra bonus deny ride trap science clarify lonely profit rural quote hamster fuel pig speak total lumber bench canyon possible execute"}, 
-  {"name": "signer2", "type": "local", "address": "crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"AkcixU8yAi547Oe9lUUMaQU4baQGCZU5ju2YeIZdaSOD\"}", "mnemonic": "cruel install century disease tired glass lesson mushroom donor usual uncover fly post stamp busy utility certain obscure whisper scene order want sentence reduce"}
-]
-```
-
-Kindly save these mnemonics for key recovery later.
-
-Blocks are now being generated! You can view the blockchain data by the rpc port of the `awesome0` (first node): [http://localhost:26657/](http://localhost:26657/). Furthermore, you can also use the swagger doc of `awesome0` at [http://localhost:26654/swagger/](http://localhost:26654/swagger/).
-
-It is worth mentioning that the `serve` command would truncate all the blocks previously generated and regenerate a new genesis block, which means you'll also lose all of your transaction records. If you wish to restart the chain with the existing blocks, please run `pystarport` with `start` command:
+The command above  command will run containers in the background using Docker compose. You will see the network being created:
 
 ```bash
-$ pystarport start --config ./scripts/cronos-devnet.yaml
+...
+Creating network "planq_localnet" with driver "bridge"
+Creating planqdnode0 ... done
+Creating planqdnode2 ... done
+Creating planqdnode1 ... done
+Creating planqdnode3 ... done
 ```
 
-## Step 3. Interact with the chain
+### Stop Localnet
 
-After the chain has been started, we may open up another terminal and start interacting with the chain by `cronosd`.
-
-### Keys management
-
-#### Restore the key
-
-For Pystarport:
-
-As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic with genesis funds inside are prepared for you in the Devnet. To gain access to the funds, kindly restore the key by using the mnemonic before moving on to the next step.
-
-**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](../cli.md#the-keyring-keyring-backend-option).
-
-* Firstly, restore the key name as `signer2`:
+Once you are done, execute:
 
 ```bash
-$ cronosd keys add signer2 --recover --keyring-backend test
+make localnet-stop
 ```
 
-Fill in your bip39 mnemonic, as can be found in `data/cronos_777-1/accounts.json`. Note that these addresses and mnemonic phrases are different for everyone.
+### Configuration
+
+The `make localnet-start` creates files for a 4-node testnet in `./build` by
+calling the `planqd testnet` command. This outputs a handful of files in the
+`./build` directory:
 
 ```bash
-Enter your bip39 mnemonic
-cruel install century disease tired glass lesson mushroom donor usual uncover fly post stamp busy utility certain obscure whisper scene order want sentence reduce
-- name: signer2
-  type: local
-  address: crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk
-  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
-  mnemonic: ""
+tree -L 3 build/
+
+build/
+├── planqd
+├── planqd
+├── gentxs
+│   ├── node0.json
+│   ├── node1.json
+│   ├── node2.json
+│   └── node3.json
+├── node0
+│   ├── planqd
+│   │   ├── key_seed.json
+│   │   └── keyring-test-cosmos
+│   └── planqd
+│       ├── config
+│       ├── data
+│       └── planqd.log
+├── node1
+│   ├── planqd
+│   │   ├── key_seed.json
+│   │   └── keyring-test-cosmos
+│   └── planqd
+│       ├── config
+│       ├── data
+│       └── planqd.log
+├── node2
+│   ├── planqd
+│   │   ├── key_seed.json
+│   │   └── keyring-test-cosmos
+│   └── planqd
+│       ├── config
+│       ├── data
+│       └── planqd.log
+└── node3
+    ├── planqd
+    │   ├── key_seed.json
+    │   └── keyring-test-cosmos
+    └── planqd
+        ├── config
+        ├── data
+        └── planqd.log
 ```
 
-### Check account balance
+Each `./build/nodeN` directory is mounted to the `/planqd` directory in each container.
 
-You can, for example, check the account balance by
+### Logging
+
+In order to see the logs of a particular node you can use the following command:
 
 ```bash
-cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
+# node 0: daemon logs
+docker exec planqdnode0 tail planqd.log
+
+# node 0: REST & RPC logs
+docker exec planqdnode0 tail planqd.log
 ```
 
-For example:
-
-```json
-{
-  "balances": [
-    {
-      "denom": "basetcro",
-      "amount": "30000000000000000000000"
-    }
-  ],
-  "pagination": {
-    "next_key": null,
-    "total": "0"
-  }
-}
-```
-
-We can see that there is `30000000000000000000000` basetcro in this address.
-
-### Transfer token to another address
-
-*   We are now ready to transfer token between different addresses; we can create another address with the key name `Bob`:
-
-    ```bash
-    $ cronosd keys add Bob --keyring-backend test
-    ```
-
-    which gives, for example:
+The logs for the daemon will look like:
 
 ```bash
- - name: Bob
- type: local
- address: crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
- pubkey: '{"@type":"/ethermint.crypto.v1.ethsecp256k1.PubKey","key":"AsR5N3GJpk6TiN4EDYv7SsW/eKPvaLBkiEh/FFwcNvUoG"}'
- mnemonic: ""
- threshold: 0
- pubkeys: []
+I[2020-07-29|17:33:52.452] starting ABCI with Tendermint                module=main
+E[2020-07-29|17:33:53.394] Can't add peer's address to addrbook         module=p2p err="Cannot add non-routable address 272a247b837653cf068d39efd4c407ffbd9a0e6f@192.168.10.5:26656"
+E[2020-07-29|17:33:53.394] Can't add peer's address to addrbook         module=p2p err="Cannot add non-routable address 3e05d3637b7ebf4fc0948bbef01b54d670aa810a@192.168.10.4:26656"
+E[2020-07-29|17:33:53.394] Can't add peer's address to addrbook         module=p2p err="Cannot add non-routable address 689f8606ede0b26ad5b79ae244c14cc67ab4efe7@192.168.10.3:26656"
+I[2020-07-29|17:33:58.828] Executed block                               module=state height=88 validTxs=0 invalidTxs=0
+I[2020-07-29|17:33:58.830] Committed state                              module=state height=88 txs=0 appHash=90CC5FA53CF8B5EC49653A14DA20888AD81C92FCF646F04D501453FD89FCC791
+I[2020-07-29|17:34:04.032] Executed block                               module=state height=89 validTxs=0 invalidTxs=0
+I[2020-07-29|17:34:04.034] Committed state                              module=state height=89 txs=0 appHash=0B54C4DB1A0DACB1EEDCD662B221C048C826D309FD2A2F31FF26BAE8D2D7D8D7
+I[2020-07-29|17:34:09.381] Executed block                               module=state height=90 validTxs=0 invalidTxs=0
+I[2020-07-29|17:34:09.383] Committed state                              module=state height=90 txs=0 appHash=75FD1EE834F0669D5E717C812F36B21D5F20B3CCBB45E8B8D415CB9C4513DE51
+I[2020-07-29|17:34:14.700] Executed block                               module=state height=91 validTxs=0 invalidTxs=0
 ```
 
-* Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
+::: tip
+You can disregard the `Can't add peer's address to addrbook` warning. As long as the blocks are
+being produced and the app hashes are the same for each node, there should not be any issues.
+:::
+
+Whereas the logs for the REST & RPC server would look like:
 
 ```bash
-  $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1basetcro --keyring-backend test --chain-id cronos_777-1
+I[2020-07-30|09:39:17.488] Starting application REST service (chain-id: "7305661614933169792")... module=rest-server
+I[2020-07-30|09:39:17.488] Starting RPC HTTP server on 127.0.0.1:8545   module=rest-server
+...
 ```
 
-*   Lastly, check balance of Bob's address:
+#### Follow Logs
 
-    ```bash
-    $ cronosd query bank balances crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
-    ```
-
-    and we can see that 1 `basetcro` has already been transferred:
-
-    ```bash
-    balances:
-    - amount: "1"
-    denom: basetcro
-    pagination:
-    next_key: null
-    total: "0"
-    ```
-
-Congratulations! You've successfully transferred tokens to Bob.
-
-#### Check the current validator set
-
-Firstly, we can check the details of the current validator set by the query command of cronosd, for example:
+You can also watch logs as they are produced via Docker with the `--follow` (`-f`) flag, for
+example:
 
 ```bash
-$ cronosd query staking validators -o json | jq
+docker logs -f planqdnode0
 ```
 
-will result in
+### Interact with the Localnet
 
-```json
-{
-  "validators": [
-    {
-      "operator_address": "ethvaloper1a303tt49l5uhe87yaneyggly83g7e4unxlc59p",
-      "consensus_pubkey": {
-        "@type": "/cosmos.crypto.ed25519.PubKey",
-        "key": "T3srVdJb8CXku5GobwHHt37t2iGQ+mRL/bEHK8Zlusw="
-      },
-      "jailed": false,
-      "status": "BOND_STATUS_BONDED",
-      "tokens": "1000000000000000000000",
-      "delegator_shares": "1000000000000000000000.000000000000000000",
-      "description": {
-        "moniker": "localtestnet",
-        "identity": "",
-        "website": "",
-        "security_contact": "",
-        "details": ""
-      },
-      "unbonding_height": "0",
-      "unbonding_time": "1970-01-01T00:00:00Z",
-      "commission": {
-        "commission_rates": {
-          "rate": "0.100000000000000000",
-          "max_rate": "0.200000000000000000",
-          "max_change_rate": "0.010000000000000000"
-        },
-        "update_time": "2021-07-06T16:15:07.061973Z"
-      },
-      "min_self_delegation": "1"
-    }
-  ],
-  "pagination": {
-    "next_key": null,
-    "total": "0"
-  }
-}
+#### Ethereum JSON-RPC & Websocket Ports
+
+To interact with the testnet via WebSockets or RPC/API, you will send your request to the corresponding ports:
+
+| EVM JSON-RPC | Eth Websocket |
+|--------------|---------------|
+| `8545`       | `8546`        |
+
+You can send a curl command such as:
+
+```bash
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}' -H "Content-Type: application/json" 192.162.10.1:8545
 ```
 
-then we can see that there are two active validator `localtestnet` at the moment.
+::: tip
+The IP address will be the public IP of the docker container.
+:::
 
-For the validator, we can see that it comes with an address and a public key:
+Additional instructions on how to interact with the WebSocket can be found on the [events documentation](./../json-rpc/events.md#ethereum-websocket).
 
-* `"operator_address"` - The operator address, which is used for identifying the operators of validators;
-* `"consensus_pubkey"` - The consensus public key, which is used for identifying the validator nodes participating in consensus.
+### Keys & Accounts
+
+To interact with `planqd` and start querying state or creating txs, you use the
+`planqd` directory of any given node as your `home`, for example:
+
+```bash
+planqd keys list --home ./build/node0/planqd
+```
+
+Now that accounts exists, you may create new accounts and send those accounts
+funds!
+
+::: tip
+**Note**: Each node's seed is located at `./build/nodeN/planqd/key_seed.json` and can be restored to the CLI using the `planqd keys add --restore` command
+:::
+
+### Special Binaries
+
+If you have multiple binaries with different names, you can specify which one to run with the BINARY environment variable. The path of the binary is relative to the attached volume. For example:
+
+```bash
+# Run with custom binary
+BINARY=planq make localnet-start
+```

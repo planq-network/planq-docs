@@ -18,7 +18,7 @@ check_jq() {
 }
 check_chain_maind() {
     set +e
-    command -v cronosd > /dev/null
+    command -v planqd > /dev/null
     RET_VALUE=$?
     set -e
 }
@@ -70,9 +70,9 @@ set +u
 if [[ ! -z "${BECH_PUBKEY}" ]]; then
     check_chain_maind
     if [[ "${RET_VALUE}" != 0 ]]; then
-        echoerr "cronosd is not installed or not in PATH. Please install it first or check cronosd is added to PATH for pubkey key conversion."
+        echoerr "planqd is not installed or not in PATH. Please install it first or check planqd is added to PATH for pubkey key conversion."
     fi
-    PUBKEY=$(cronosd debug pubkey ${BECH_PUBKEY} 2>&1 | grep "tendermint/PubKeyEd25519" | cut -d : -f2- | jq -r .value || echoerr "Decode Pubkey Failed ❌")
+    PUBKEY=$(planqd debug pubkey ${BECH_PUBKEY} 2>&1 | grep "tendermint/PubKeyEd25519" | cut -d : -f2- | jq -r .value || echoerr "Decode Pubkey Failed ❌")
 fi
 if [[ -z "${PUBKEY}" ]]; then
 	echoerr "Missing --pubkey {base64 encoded Tendermint public key}"
@@ -81,12 +81,12 @@ set -u
 NUM=1
 while true; do
     ERR=$(curl -sSL "${TENDERMINT_URL}/validators?per_page=100&page=${NUM}" | jq -r .error)
-    if [[ $ERR == "null" ]]; then 
+    if [[ $ERR == "null" ]]; then
         ADDRESS=$(curl --max-time 10 -sSL "${TENDERMINT_URL}/validators?per_page=100&page=${NUM}" | jq -r --arg PUBKEY "${PUBKEY}" '.result.validators[] | select(.pub_key.value == $PUBKEY) | .address')
         if [[ ! -z "${ADDRESS}" ]]; then
             break;
         fi
-    else 
+    else
         break;
     fi;
     ((NUM=NUM+1))

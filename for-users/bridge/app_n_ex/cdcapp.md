@@ -12,17 +12,17 @@
 
 ![](../assets/cdcapp2-1.png)![](../assets/cdcapp2-2.png)
 
-**Step 3**: Select “**External Wallet**” and whitelist your Cronos wallet address.
+**Step 3**: Select “**External Wallet**” and whitelist your Planq wallet address.
 
 ![](../assets/cdcapp3-1.png)![](../assets/cdcapp3-2.png)
 
-**Step 4**: Select the Cronos network and paste your Cronos wallet address .
+**Step 4**: Select the Planq network and paste your Planq wallet address .
 
-You should have a Cronos wallet address ready at this point (either on MetaMask, Crypto.com DeFi Wallet, or any other wallet supporting Cronos). No memo is required to withdraw your funds to Cronos. Once you have confirmed that your Cronos wallet address is accurate, tap “**Continue**”.
+You should have a Planq wallet address ready at this point (either on MetaMask, Leap Wallet, or any other wallet supporting Planq). No memo is required to withdraw your funds to Planq. Once you have confirmed that your Planq wallet address is accurate, tap “**Continue**”.
 
 ![](../assets/cdcapp4.png)
 
-**Step 5**: Select your newly whitelisted Cronos wallet address and input the amount of tokens that you wish to withdraw. After entering the amount, tap “**Withdraw**”. You will then be prompted to enter your password and 2FA code (if enabled).
+**Step 5**: Select your newly whitelisted Planq wallet address and input the amount of tokens that you wish to withdraw. After entering the amount, tap “**Withdraw**”. You will then be prompted to enter your password and 2FA code (if enabled).
 
 ![](../assets/cdcapp5.png)
 

@@ -41,7 +41,7 @@
             class="input"
             type="text"
             v-model="input"
-            placeholder="What is Cronos?"
+            placeholder="What is Planq?"
             v-on:keyup.enter="onEnter"
           />
           <span class="span">↩Enter</span>
@@ -70,7 +70,7 @@ export default {
   methods: {
     onEnter: function () {
       window.open(
-        `https://docs.cronos.org/getting-started/readme?q=${this.input}`,
+        `https://docs.planq.network/getting-started/readme?q=${this.input}`,
         "_blank"
       );
     },

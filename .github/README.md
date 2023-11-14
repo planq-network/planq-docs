@@ -1,10 +1,10 @@
 # README
 
 
-![Cronos Logo](../docs/.vuepress/public/cronos.svg)
+![Planq Logo](../docs/.vuepress/public/cronos.svg)
 
 
-## Cronos Gitbook Documentation
+## Planq Gitbook Documentation
 
 The documentation in this repository site is meant to provide specifications and implementation details on Gitbook that will be useful developers or contributors to the main repository.
 
@@ -13,8 +13,8 @@ The documentation in this repository site is meant to provide specifications and
 #### Contributing
 
 1. Fork this repository on Github
-2. Clone your forked repository with `git clone https://github.com/YOURUSERNAME/cronos-docs.git`
-3. `cd cronos-docs`
+2. Clone your forked repository with `git clone https://github.com/YOURUSERNAME/planq-docs.git`
+3. `cd planq-docs`
 4. `git checkout gitbook` to switch to the gitbook branch.
 5. `git checkout -b [NewBranch]` create a new branch and push your commits.
 6. Finally open a Pull Request.
@@ -35,7 +35,7 @@ The documentation in this repository site is meant to provide specifications and
 ### Style guide
 
 * Use 3 levels at most
-* Categorise docs mostly per user, dapp, node hosts, Cronos play
+* Categorise docs mostly per user, dapp, node hosts
 * Keep docs/sentences short, DRY and modular
 * Use tabs, tables, hints and relative page links
 * Double check SUMMARY.md and prefer the use of horizontal images

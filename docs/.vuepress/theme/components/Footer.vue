@@ -20,7 +20,7 @@
               </a>
             </div> -->
             <div class="link">
-              <a href="https://docs.cronos.org/getting-started/readme">
+              <a href="https://docs.planq.network/getting-started/readme">
                 Documentation
               </a>
             </div>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="socials">
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/cronos_chain">
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/planq_chain">
             <img :src="$withBase('/social/twitter.svg')" alt="twitter" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/cronos-labs/">
@@ -84,13 +84,13 @@
           <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Crypto_com/">
             <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
           </a> -->
-          <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/pahqHz26q4">
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/planq-network">
             <img :src="$withBase('/social/discord.svg')" alt="discord" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://t.me/Cryptoorg_Chain_Announcements">
             <img :src="$withBase('/social/telegram.svg')" alt="telegram" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/crypto-org-chain/cronos-docs">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/planq-network/planq-docs">
             <img :src="$withBase('/social/github.svg')" alt="github" />
           </a>
           <!-- <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
@@ -102,7 +102,7 @@
         </div>
       </div>
       <p class="copyright">
-        Copyright © {{ currentYear }} CRO Protocol Labs. All rights reserved.
+        Copyright © {{ currentYear }} PLQ Protocol Labs. All rights reserved.
       </p>
     </div>
   </footer>
@@ -146,7 +146,7 @@ $light-color = rgba(255, 255, 255, 50%)
     margin-bottom 3rem
 
     .footer-logo {
-      width 110px  
+      width 110px
     }
 
     .navLinks {

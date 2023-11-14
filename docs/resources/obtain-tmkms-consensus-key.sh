@@ -13,7 +13,7 @@ fi
 tmkms start -c <(cat << EOF
 [[chain]]
 id = "id"
-key_format = { type = "bech32", account_key_prefix = "tcropub", consensus_key_prefix = "tcrocnclconspub" }
+key_format = { type = "bech32", account_key_prefix = "tplqpub", consensus_key_prefix = "tplqconspub" }
 state_file = "/tmp/priv_validator_state.json"
 [[validator]]
 addr = "unix:///tmp/validator.socket"
