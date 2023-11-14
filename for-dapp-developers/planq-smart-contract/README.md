@@ -50,10 +50,6 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)\
 `Nodejs v10` is suggested
 
-### Sufficient funds on deployer address
-
-You can access to [faucet](https://cronos.org/faucet) to obtain testnet TPLQ and [explorer](https://testnet.evm.planq.network/) to view the address details.
-
 ### Git clone `smart-contract-example`
 
 ```bash
