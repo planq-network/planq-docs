@@ -15,6 +15,11 @@
   * [IBC (Planq Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [Deltaswapp WebApp (BSC, other EVM Chains)](for-users/bridge/deltaswap/README.md)
+    * [Assumptions](for-users/bridge/deltaswap/assumptions.md)
+    * [Governor](for-users/bridge/deltaswap/governor.md)
+    * [Operations](for-users/bridge/deltaswap/operations.md)
+    * [Updating Testnet](for-users/bridge/deltaswap/updating\_testnet.md)
+    * [Vesting](for-users/bridge/deltaswap/vesting.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
 * [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 
