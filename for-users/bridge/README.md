@@ -7,5 +7,5 @@ In this section you can find different tutorials on how to bridge your assets:
 {% endcontent-ref %}
 
 {% content-ref url="deltaswap/" %}
-[Deltaswap](./deltaswap)
+[Deltaswap](deltaswap/)
 {% endcontent-ref %}
