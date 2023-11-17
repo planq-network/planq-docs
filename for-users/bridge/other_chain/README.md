@@ -34,8 +34,8 @@ We are constantly working on adding new tokens and blockchains. If you have any 
 
 The Deltaswap Bridge can be found at [https://swap.deltaswap.io](https://swap.deltaswap.io).
 
-{% content-ref url="webapp.md" %}
-[webapp.md](../deltaswap/README.md)
+{% content-ref url="../deltaswap/README.md" %}
+[../deltaswap/README.md](../deltaswap/README.md)
 {% endcontent-ref %}
 
 ## Via Leap Wallet

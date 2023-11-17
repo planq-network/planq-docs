@@ -13,7 +13,7 @@ Note 1: If you are bridging assets to or from Planq, you may specify the destina
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Osmosis ⇔ Planq only is only supported by Keplr. To learn how to add your Terra station wallet to Keplr, please click [here](../other_chain/keplr.md).
+Note 2: Currently, Osmosis ⇔ Planq only is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other_chain/keplr.md).
 {% endhint %}
 
 ![centered image](../assets/webapp\_connect\_wallet.png)
