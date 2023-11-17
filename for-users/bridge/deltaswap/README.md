@@ -1,4 +1,4 @@
-# Deltaswap
+# Deltaswapp WebApp (BSC, other EVM Chains)
 
 ## Transfer assets from Planq Chain using Deltaswap Web App
 
@@ -13,10 +13,10 @@ Note 1: If you are bridging assets to or from Planq, you may specify the destina
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Osmosis ⇔ Planq only is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other_chain/keplr.md).
+Note 2: Currently, Osmosis ⇔ Planq only is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other\_chain/keplr.md).
 {% endhint %}
 
-![centered image](../assets/webapp\_connect\_wallet.png)
+![centered image](../../../.gitbook/assets/webapp\_connect\_wallet.png)
 
 **Step 2. Select Network and Token**
 
@@ -26,7 +26,7 @@ If you are transferring to or from Planq, you need to specify the destination ad
 
 Once the networks are chosen, select the asset you would like to transfer.
 
-![centered image](../assets/webapp\_select\_network.png)
+![centered image](../../../.gitbook/assets/webapp\_select\_network.png)
 
 **Step 3. Enter the amount**
 
@@ -40,13 +40,13 @@ During the promotional launch period, the network fee incurred by the bridge wil
 
 Before bridging a large amount, we encourage testing a transfer of a small amount first to ensure that all settings are correct.
 
-![centered image](../assets/webapp\_enter\_amout.png)
+![centered image](../../../.gitbook/assets/webapp\_enter\_amout.png)
 
-![](../assets/4a\_confirm\_wallet\_txn.png)
+![](../../../.gitbook/assets/4a\_confirm\_wallet\_txn.png)
 
-![](../assets/4b\_confirm\_wallet\_txn.png)
+![](../../../.gitbook/assets/4b\_confirm\_wallet\_txn.png)
 
-![](../assets/4c\_confirm\_wallet\_txn.png)
+![](../../../.gitbook/assets/4c\_confirm\_wallet\_txn.png)
 
 **Step 4. Confirm the transaction**
 
@@ -54,9 +54,9 @@ Once all the transfer settings have been confirmed, a transaction confirmation p
 
 This will send a transaction request to your wallet. Please confirm the request in your wallet to ultimately authorise the transfer.
 
-After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../../faq.md).
+After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../faq.md).
 
-![centered image](../assets/webapp\_confirmation\_screen.png)
+![centered image](../../../.gitbook/assets/webapp\_confirmation\_screen.png)
 
 **Step 5. Bridging assets**
 
@@ -68,6 +68,6 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 
 Thank you for using the Planq Bridge and supporting the Planq ecosystem.
 
-![centered image](../assets/5\_txn\_complete.png)
+![centered image](../../../.gitbook/assets/5\_txn\_complete.png)
 
-![centered image](../assets/5\_history\_table.png)
+![centered image](../../../.gitbook/assets/5\_history\_table.png)

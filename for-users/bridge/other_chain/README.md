@@ -2,7 +2,7 @@
 
 ## Introduction
 
-![centered image](../assets/webappintro.png)
+![centered image](../../../.gitbook/assets/webappintro.png)
 
 The Planq Bridge’s goal is to support the seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best DApps and earnings no matter the chain.
 
@@ -34,8 +34,8 @@ We are constantly working on adding new tokens and blockchains. If you have any 
 
 The Deltaswap Bridge can be found at [https://swap.deltaswap.io](https://swap.deltaswap.io).
 
-{% content-ref url="../deltaswap/README.md" %}
-[../deltaswap/README.md](../deltaswap/README.md)
+{% content-ref url="../deltaswap/" %}
+[deltaswap](../deltaswap/)
 {% endcontent-ref %}
 
 ## Via Leap Wallet

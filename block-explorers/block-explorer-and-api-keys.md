@@ -7,7 +7,6 @@
 * [https://evm.planq.network/](https://evm.planq.network)
 * [https://explorer.planq.network/](https://explorer.planq.network/)
 {% endtab %}
-
 {% endtabs %}
 
 ### **Creating API Keys on Planq EVM Explorer**
@@ -17,11 +16,11 @@ After registration, a Planq EVM Explorer user account will have a quota of up to
 
 On the [Planq EVM Explorer user dashboard](https://evm.planq.network/myaccount), select “**API-KEYs**” in the left column or go to [https://evm.planq.network/myapikey](https://evm.planq.network/myapikey).
 
-![drawing](assets/myapikey-page.png)
+![drawing](../.gitbook/assets/myapikey-page.png)
 
 Click “**Create a new API-KEY token**”. Then optionally input an \_**AppName** \_ if you wish to.
 
-![drawing](assets/create-apikey.png)
+![drawing](../.gitbook/assets/create-apikey.png)
 
 After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Planq!
 

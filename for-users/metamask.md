@@ -15,7 +15,8 @@ meta:
       Learn how to use the MetaMask chrome extension to send or receive and
       interact with the Planq testnet in this technical documentation.
   - name: og:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
   - name: twitter:title
     content: Planq | Planq EVM Chain | Using MetaMask
   - name: twitter:site
@@ -27,7 +28,8 @@ meta:
       Learn how to use the MetaMask chrome extension to send or receive and
       interact with the Planq testnet in this technical documentation.
   - name: twitter:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
 canonicalUrl: https://docs.planq.network/getting-started/metamask.html
 ---
 
@@ -55,7 +57,6 @@ First, you will need to connect your MetaMask wallet to the Planq network:
 * **Symbol:**`PLQ`
 * **Block explorer URL:**`https://evm.planq.network/`
 {% endtab %}
-
 {% endtabs %}
 
 ![](../.gitbook/assets/Metamask-settings.png)
@@ -72,7 +73,7 @@ planqd keys unsafe-export-eth-key mykey --keyring-backend test
 
 It will show your private key and you can copy it for the next step. Click the "**My Account"** button at the top right corner again. Then, select "**Import Account**":
 
-![](assets/4.png)
+![](../.gitbook/assets/4.png)
 
 Paste your private key string from the previous step and click "**Import"**.
 

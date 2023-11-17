@@ -65,9 +65,9 @@ npm run deploy-contract-planq
 
 Correct balance will be shown on Metamask page
 
-![](../assets/planq-smart-contract/truffle\_deploy\_contract\_address.png)
+![](../../.gitbook/assets/truffle\_deploy\_contract\_address.png)
 
-![](../assets/planq-smart-contract/metamask\_add\_tokens.png) ![](../assets/planq-smart-contract/metamask\_add\_token\_success.png)
+![](../../.gitbook/assets/metamask\_add\_tokens.png) ![](../../.gitbook/assets/metamask\_add\_token\_success.png)
 
 ## Hardhat: Deploy ERC20 Contract
 
@@ -140,4 +140,4 @@ Correct balance will be shown on Metamask page
 PlanqToken deployed to: 0x5F803c894a0A16B46fe5982fB5D89eb334eAF68
 ```
 
-![](../assets/planq-smart-contract/metamask\_add\_tokens.png) ![](../assets/planq-smart-contract/metamask\_add\_token\_success.png)
+![](../../.gitbook/assets/metamask\_add\_tokens.png) ![](../../.gitbook/assets/metamask\_add\_token\_success.png)

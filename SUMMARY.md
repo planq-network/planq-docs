@@ -20,7 +20,7 @@
     * [Operations](for-users/bridge/deltaswap/operations.md)
     * [Updating Testnet](for-users/bridge/deltaswap/updating\_testnet.md)
     * [Vesting](for-users/bridge/deltaswap/vesting.md)
-  * [FAQs for Bridge transfers](for-users/faq.md)
+  * [FAQs for Bridge transfers](for-users/bridge/faq.md)
 * [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 
 ## FOR DAPP DEVELOPERS
@@ -34,11 +34,11 @@
   * [Token Contract Addresses](for-dapp-developers/planq-smart-contract/token-contract-addresses.md)
 * [💻 dApp Creation](for-dapp-developers/chain-integration/README.md)
   * [Free and commercial RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
-  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md) 
+  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Adress Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
 * [⚙ Dev Tools & Integrations](for-dapp-developers/dev-tools-and-integrations/README.md)
-  * [Overview of dev tools & integrations](for-dapp-developers/useful-projects-on-planq/overview-of-dev-tools-and-integrations.md)
+  * [Overview of dev tools & integrations](for-dapp-developers/dev-tools-and-integrations/overview-of-dev-tools-and-integrations.md)
   * [Flair](for-dapp-developers/dev-tools-and-integrations/flair.md)
 
 ## FOR NODE HOSTS
