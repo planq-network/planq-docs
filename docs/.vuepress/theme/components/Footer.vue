@@ -6,7 +6,7 @@
           <a href="/">
             <img
               class="footer-logo"
-              :src="$withBase('/cronos-horizontal-logo-white.svg')"
+              :src="$withBase('/planq.svg')"
               alt="logo-icon-white"
             />
           </a>
@@ -54,55 +54,32 @@
           <div class="column">
             <h3>Explorer</h3>
             <div class="link">
-              <a href="https://cronos-explorer.crypto.org/">
+              <a href="https://evm.planq.network/">
                 Explorer
               </a>
             </div>
           </div>
         </div>
         <div class="socials">
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/planq_chain">
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/planqfoundation">
             <img :src="$withBase('/social/twitter.svg')" alt="twitter" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/cronos-labs/">
-            <img :src="$withBase('/social/linkedin.svg')" alt="linkedin" />
-          </a>
-          <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/CryptoComOfficial">
-            <img :src="$withBase('/social/facebook.svg')" alt="facebook" />
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cryptocomofficial/">
-            <img :src="$withBase('/social/instagram.svg')" alt="instagram" />
-          </a>
-          -->
-
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UC0VNDQLc_YHDACURNuQCZfw"
-          >
-            <img :src="$withBase('/social/youtube.svg')" alt="youtube" />
-          </a>
-          <!--
-          <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Crypto_com/">
-            <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
-          </a> -->
           <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/planq-network">
             <img :src="$withBase('/social/discord.svg')" alt="discord" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://t.me/Cryptoorg_Chain_Announcements">
+          <a target="_blank" rel="noopener noreferrer" href="https://t.me/planqnetwork">
             <img :src="$withBase('/social/telegram.svg')" alt="telegram" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/planq-network/planq-docs">
             <img :src="$withBase('/social/github.svg')" alt="github" />
           </a>
-          <!-- <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
-            <img :src="$withBase('/social/kakaotalk.svg')" alt="kakaotalk" />
-          </a> -->
-          <a target="_blank" rel="noopener noreferrer" href="https://crofam.me/contact">
-            <img :src="$withBase('/social/email.svg')" alt="Email" />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/planq_network">
+            <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
           </a>
         </div>
       </div>
       <p class="copyright">
-        Copyright © {{ currentYear }} PLQ Protocol Labs. All rights reserved.
+        Copyright © {{ currentYear }} Planq Network. All rights reserved.
       </p>
     </div>
   </footer>

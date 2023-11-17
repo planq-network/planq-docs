@@ -8,7 +8,6 @@ IMPORTANT
 In order to use Snapshot you need to first complete [Step 3-2](./#step-3-2.-run-everything) with the latest binary.
 
 \
-**Note** that as of `v0.9.0`, we have merged the binary to support both levelDB and rocksDB. Therefore, make sure to select the right [`app-db-backend`](https://github.com/crypto-org-chain/cronos/releases/tag/v1.0.2)in your `app.toml`.&#x20;
 {% endhint %}
 
 Syncing Planq could be a time-consuming process, that's why the Planq Chain team has partnered with Chainlayer to provide the “**Snapshot**” service and make the process more efficient for our users.
@@ -28,15 +27,15 @@ Both RocksDB and LevelDB snapshots are now available for Planq Chain.
 To start with Snapshot, you need to run `brew install lz4` to install lz4 in a new terminal.\
 Then download the file with preferred pruning settings directly from [Snapshot](https://polkachu.com/tendermint_snapshots/planq).
 
-**Planqmainnet\_25-1-pruned**
+**planq\_7070-2-pruned**
 
 * Pruned snapshot is the quickest way to get a node running. If you just would like to give it a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when you startup your node. But you will not be able to query anything earlier than that.
 
-**Planqmainnet\_25-1-default**
+**planq\_7070-2-default**
 
 * Default is a good middle choice between everything. It will work in most use cases, validator, sentry node, API nodes. It has tx index enabled, so you can query block back in time. The only thing that default nodes do not have is the full history from the start of the chain or chain upgrade.
 
-**Planqmainnet\_25-1-archive**
+**planq\_7070-2-archive**
 
 * For the users who would like to query the old block, you may pick the archive one for complete blockchain data. The archive node will have all the blocks from the chain start or chain upgrade with full indexing. So this is a good option for API nodes if you need to have access to the whole chain history. Archives grow fast in size and might be more sluggish to run, so if you need something simpler default or a pruned kickstarted API node might solve most of the needs out there.
 
@@ -45,7 +44,7 @@ Then download the file with preferred pruning settings directly from [Snapshot](
 In the following steps, we will take as an example the version\
 `planq_5976211.tar.lz4`.
 
-* (Optional) you can [download an addressbook](https://raw.githubusercontent.com/planq-network/networks/main/mainnet/addrbook.json) to get connected to peers faster. After downloading it, place the new `addrbook.json` under `.cronos/config` folder and restart your node to take effect.
+* (Optional) you can [download an addressbook](https://raw.githubusercontent.com/planq-network/networks/main/mainnet/addrbook.json) to get connected to peers faster. After downloading it, place the new `addrbook.json` under `.planqd/config` folder and restart your node to take effect.
 * Now add the `planq_5976211.tar.lz4` inside `.planqd`
 
 Then perform the following steps:

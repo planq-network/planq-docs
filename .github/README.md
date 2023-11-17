@@ -1,7 +1,7 @@
 # README
 
 
-![Planq Logo](../docs/.vuepress/public/cronos.svg)
+![Planq Logo](../docs/.vuepress/public/planq.svg)
 
 
 ## Planq Gitbook Documentation
@@ -21,7 +21,7 @@ The documentation in this repository site is meant to provide specifications and
 
 ### Adding new page to the docs
 
-1. Create a markdown file `[Newfile.md]` under one of the main categories, e.g. `for-users/`, `for-node-hosts/`, `for-dapp-developers/` or `cronos-play/`
+1. Create a markdown file `[Newfile.md]` under one of the main categories, e.g. `for-users/`, `for-node-hosts/` or `for-dapp-developers/`
 2. Open `SUMMARY.md` and add the new markdown file in the right file structure, e.g.
 
 ```md

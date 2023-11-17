@@ -28,13 +28,6 @@ Scroll right/left to see full contents.
          <td>Mainnet: https://evm.planq.network</td>
       </tr>
       <tr>
-         <td>C++</td>
-         <td>Planq integration of the Chainsafe Gaming SDK for Unity gaming engine</td>
-         <td>cronos-play</td>
-         <td>https://docs.planq.network/play/getting-started_cpp.html#pre-requisites; https://github.com/cronos-labs/play-cpp-sdk</td>
-         <td></td>
-      </tr> 
-      <tr>
          <td>Planqs free JSON-RPC</td>
          <td>Free JSON-RPC endpoint for the Planq community</td>
          <td>json-rpc</td>
@@ -108,21 +101,7 @@ Scroll right/left to see full contents.
          <td>Keplr Wallet</td>
          <td>Buy, store, collect NFTs, exchange &#x26; earn crypto. Join 25 million+ people using Keplr Wallet.</td>
          <td>wallet</td>
-         <td>https://trustwallet.com/; https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Unity</td>
-         <td>Planq integration of the Chainsafe Gaming SDK for Unity gaming engine</td>
-         <td>cronos-play</td>
-         <td>https://docs.planq.network/play/getting-started.html; https://github.com/ChainSafe/web3.unity</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Unreal</td>
-         <td>Planq plugin for Unreal gaming engine</td>
-         <td>cronos-play</td>
-         <td>https://docs.planq.network/play/getting-started_unreal.html; https://github.com/cronos-labs/play-cpp-sdk</td>
+         <td>https://trustwallet.com/;</td>
          <td></td>
       </tr>
       <tr>
@@ -142,7 +121,7 @@ Scroll right/left to see full contents.
       <tr>
          <td>Web3Auth</td>
          <td>Simple self-custodial auth infra for Web3 apps and wallets</td>
-         <td>cronos-play, wallet</td>
+         <td>wallet</td>
          <td>https://web3auth.io/; https://web3auth.io/docs/connect-blockchain/multi-chain</td>
          <td>Unity SDK: https://github.com/Web3Auth/web3auth-unity-sdk; Unreal SDK (WIP): https://github.com/Web3Auth/web3auth-unreal-sdk</td>
       </tr>

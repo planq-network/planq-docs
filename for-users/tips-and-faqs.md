@@ -6,7 +6,7 @@ description: For end-users
 
 **How can I get started on Planq chain?**
 
-* For most end-users, the easiest way to get started on Planq chain is to start with a Crypto.com app account and then transfer some PLQ and cryptocurrency holdings to your self-custodial wallet on Planq via the "withdraw" feature.
+* For most end-users, the easiest way to get started on Planq chain is to start with a [BingX](https://bingx.com/) account and then transfer some PLQ and cryptocurrency holdings to your self-custodial wallet on Planq via the "withdraw" feature.
 * With respect to the choice of a self-custodial wallet, a Leap Wallet, MetaMask, or Brave wallet is a good place to start. You can start trying other wallets once you become more familiar with self-custody.
 * Don't forget that you need PLQ in your wallet in order to pay for transaction fees on Planq chain.
 

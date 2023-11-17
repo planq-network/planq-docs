@@ -12,14 +12,10 @@
 * [🦊 MetaMask Configuration](for-users/metamask.md)
 * [🦁 Brave Wallet](for-users/brave-wallet.md)
 * [🌉 Bridges](for-users/bridge/README.md)
-  * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
-    * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
-    * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
   * [IBC (Planq Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
-    * [Planq Bridge Web App](for-users/bridge/other\_chain/webapp.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
+  *[Deltaswapp WebApp](for-users/bridge/other\_chain/webapp.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
-  * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
 * [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 
 ## FOR DAPP DEVELOPERS
@@ -33,11 +29,9 @@
   * [Token Contract Addresses](for-dapp-developers/planq-smart-contract/token-contract-addresses.md)
 * [💻 dApp Creation](for-dapp-developers/chain-integration/README.md)
   * [Free and commercial RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
-  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
-  * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
+  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md) 
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Adress Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
-  * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [⚙ Dev Tools & Integrations](for-dapp-developers/dev-tools-and-integrations/README.md)
   * [Overview of dev tools & integrations](for-dapp-developers/useful-projects-on-planq/overview-of-dev-tools-and-integrations.md)
   * [Flair](for-dapp-developers/dev-tools-and-integrations/flair.md)
@@ -50,7 +44,6 @@
     * [State-sync](for-node-hosts/running-nodes/planq-mainnet/state-sync.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [Best Practices](for-node-hosts/running-nodes/planq-node-best-practises.md)
-  * [VersionDB](for-node-hosts/running-nodes/versiondb.md)
 * [Planqd](for-node-hosts/cli.md)
 
 ## Block Explorers

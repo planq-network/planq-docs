@@ -67,12 +67,8 @@ module.exports = {
         text: "Bridge",
         items: [
           {
-            text: "Via Crypto.com App and Exchange",
-            link: "https://docs.planq.network/for-users/bridge/app_n_ex"
-          },
-          {
-            text: "From other chains (Planq Bridge WebApp)",
-            link: "https://docs.planq.network/for-users/bridge/other_chain/webapp"
+            text: "From other chains (Deltaswap WebApp)",
+            link: "https://docs.planq.network/for-users/bridge/deltaswap/webapp"
           },
           {
             text: "From other chains (Leap Wallet)",

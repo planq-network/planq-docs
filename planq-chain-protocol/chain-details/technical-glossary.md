@@ -8,7 +8,7 @@ A | [B](technical-glossary.md#b) | [C](technical-glossary.md#c) | [D](technical-
 
 **Block Explorer**
 
-An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Planq Chain Explorer](https://evm.planq.network/), [Planq Explorer](https://evm.planq.network/) and [Planq Testnet Explorer](https://cronos-explorer.crypto.org/testnet3).
+An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Planq Chain Explorer](https://evm.planq.network/), [Planq Explorer](https://evm.planq.network/).
 
 **Bonded (staking state)**
 
@@ -20,7 +20,7 @@ A validator is said to make a byzantine fault when they sign conflicting message
 
 #### C
 
-**Chain ID** A unique identifier for the blockchain. Different prefixes of the Chain ID are used to distinguish between _mainnet_, _devnet_, and _testnet_. For example, the Chain ID of our [testnet](https://crypto.org/docs/getting-started/cronos-testnet.html) is `cronostestnet_338-1`.
+**Chain ID** A unique identifier for the blockchain. Different prefixes of the Chain ID are used to distinguish between _mainnet_, _devnet_, and _testnet_. For example, the Chain ID of our [mainnet](https://docs.planq.network/docs/getting-started/planq-mainnet.html) is `planq_7070-2`.
 
 **Chain-abci**
 
@@ -68,7 +68,7 @@ It is a state machine that provides the necessary tools to run or create a contr
 
 #### F
 
-[**Faucet**](https://crypto.org/faucet)
+**Faucet**
 
 Service carried out that dispenses funds in the form of free test token that can be used on a testnet.
 
@@ -160,7 +160,7 @@ Multisig (multi-signature) is a digital signature that makes it possible for mul
 
 **Network ID**
 
-The last two hex characters of the Chain ID. Using our testnet Chain ID `cronostestnet_338-3` as an example, the network ID would be `338`.
+The last two hex characters of the Chain ID. Using our testnet Chain ID `planq_7070-2` as an example, the network ID would be `338`.
 
 **Non-fungible Token (NFT)**
 
@@ -269,7 +269,7 @@ The role of validators is to run a full-node and participate in consensus by bro
 
 **Validator Keys**
 
-The key pair for signing messages from the validator. The full key pair is located under the tendermint `priv_validator_key.json` folder after the initialization. In a production deployment, it is strongly advised not to keep the private key reside on the machine (see the [deployment notes](https://github.com/crypto-org-chain/chain-docs/blob/master/docs/getting-started/notes-on-production-deployment.md) and [recommendations](https://github.com/iqlusioninc/tmkms#hardware-security-modules-recommended) )
+The key pair for signing messages from the validator. The full key pair is located under the tendermint `priv_validator_key.json` folder after the initialization. In a production deployment, it is strongly advised not to keep the private key reside on the machine (see the [recommendations](https://github.com/iqlusioninc/tmkms#hardware-security-modules-recommended) )
 
 **Voting**
 

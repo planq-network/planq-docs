@@ -58,7 +58,7 @@ Transaction fees are paid in Planq ($PLQ), a blue chip cryptocurrency.
 If you are a Web3 application creator, there are 3 main reasons to build on Planq:
 
 * EVM compatible – Solidity and all the EVM tools just work out of the box.
-* Strategic partnership with [Crypto.com](http://crypto.com/) – easy on-ramp to your dapp.
+* Strategic partnership with [Leap Wallet](https://www.leapwallet.io/) – easy on-ramp to your dapp.
 * \#PLQ - a highly engaged user and builder community of >80 million people worldwide, who are keen to try the latest and greatest apps.&#x20;
 
 As an application founder/developer on Planq, you can leverage:
@@ -71,9 +71,9 @@ As an application founder/developer on Planq, you can leverage:
 
 ## Useful links
 
-Web: [Planq](https://planq.network) | [Planq](https://cronoslabs.org)
+Web: [Planq](https://planq.network)
 
-Blog: [Planq](https://blog.cronos.org/)
+Blog: [Planq](https://medium.org/@planq)
 
 Socials: [Twitter](https://twitter.com/planqfoundation) | [Telegram](https://t.me/PlanqNetwork) | [Discord](https://discord.gg/planq-network) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
 

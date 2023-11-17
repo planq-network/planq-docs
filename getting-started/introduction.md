@@ -72,7 +72,7 @@ IBC is a protocol that allows blockchains to communicate with each other, intero
 
 The Planq protocol engineering team contributes actively to open-source projects of the Ethereum and Cosmos ecosystem.
 
-Through its strategic partnership with Crypto.com, a leading custodial crypto platform, Planq can leverage easy on-ramp and access for an addressable user community of more than 70 million users worldwide.
+Through its strategic partnership with Leap Wallet, a leading custodial crypto platform, Planq can leverage easy on-ramp and access for an addressable user community of more than 70 million users worldwide.
 
 ## Ecosystem support
 

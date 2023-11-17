@@ -61,10 +61,10 @@ Set a unique namespace, Planq chainId and RPC endpoint in your config. Remember 
 ```
 {
   "cluster": "dev",
-  "namespace": "my-awesome-cronos-indexing-dev",
+  "namespace": "my-awesome-planq-indexing-dev",
   "indexers": [
     {
-      "chainId": 25,
+      "chainId": 7070,
       "enabled": true,
       "ingestionFilterGroup": "default",
       "processingFilterGroup": "default",
@@ -83,13 +83,13 @@ Set a unique namespace, Planq chainId and RPC endpoint in your config. Remember 
 
 ```
 # backfill certain contracts or block ranges
-pnpm flair backfill --chain 25 --address 0x6911dE03899e040745bdAC855333E294B927945D -d backward --max-blocks 10000
+pnpm flair backfill --chain 7070 --address 0x6911dE03899e040745bdAC855333E294B927945D -d backward --max-blocks 10000
 
 # backfill for a specific block number, if you have certain events you wanna test with
-pnpm flair backfill --chain 25 -b 10329277
+pnpm flair backfill --chain 7070 -b 10329277
 
 # backfill for the recent data in the last X minute
-pnpm flair backfill --chain 25 --min-timestamp="30 mins ago" -d backward
+pnpm flair backfill --chain 7070 --min-timestamp="30 mins ago" -d backward
 ```
 
 4️⃣ [Query](https://docs.flair.dev/#getting-started) your custom indexed data.

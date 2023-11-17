@@ -28,7 +28,7 @@ meta:
       Beta planq_7070-2 in this technical documentation.
   - name: twitter:image
     content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
-canonicalUrl: https://docs.planq.network/getting-started/cronos-mainnet.html
+canonicalUrl: https://docs.planq.network/getting-started/planq-mainnet.html
 ---
 
 # Planq Mainnet

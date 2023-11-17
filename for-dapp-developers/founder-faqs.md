@@ -13,7 +13,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 ## TLDR; what do I need to know if I am considering Planq for my dapp?
 
-[Planq](https://planq.network) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Planq and more than 500 app developers and partners. Today, the #PLQ ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
+[Planq](https://planq.network) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Leap Wallet, Planq and more than 500 app developers and partners. Today, the #PLQ ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
 
 [Dapp.Space](https://dapp.space) can help most dapp creators to enhance the visibility of their product in the Planq user community. However, Planq is generally not able to promote token or NFT sales. The following support is available to dapp creators:
 

@@ -35,7 +35,7 @@ The native cryptocurrency of Planq mainnet is PLQ, while the testnet uses TPLQ.
     ```json
     {
     "planq_mainnet": {
-          "chainId": 25,
+          "chainId": 7070,
           "url": "https://evm-rpc.planq.network/",
           "gasPrice": 5000000000000,
           "blockExplorer": "https://evm.planq.network/",
@@ -49,7 +49,7 @@ The native cryptocurrency of Planq mainnet is PLQ, while the testnet uses TPLQ.
     ```json
     {
     "planq_mainnet": {
-          "id": 25,
+          "id": 7070,
           "url": "https://evm-rpc.planq.network/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
@@ -73,7 +73,7 @@ Connect your Dapp to the blockchain
 
 ## Developer support ☎️
 
-Please visit the #cronos-mainnet-beta channel on the Planq [Discord](https://discord.gg/planq-network) server.
+Please visit the #general channel on the Planq [Discord](https://discord.gg/planq-network) server.
 
 Feedback is a gift! [Let us know](mailto:info@planq.network) if there is anything that we can improve in this documentation.
 

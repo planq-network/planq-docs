@@ -4,7 +4,7 @@ Planq is supported by more than 30 wallets, some of which are shown [here](https
 
 ## Leap Wallet
 
-The [Leap Wallet](https://www.leapwallet.io/download) is a self-custodial crypto wallet developed by Crypto.com. It supports Planq and dozens of Planq cryptocurrencies natively, as well as all NFTs on the Planq chain. The wallet is available in 3 user interfaces:
+The [Leap Wallet](https://www.leapwallet.io/download) is a self-custodial crypto wallet developed by Leap Wallet. It supports Planq and dozens of Planq cryptocurrencies natively, as well as all NFTs on the Planq chain. The wallet is available in 3 user interfaces:
 
 * The mobile wallet, available for iOS and Android (download [here](https://www.leapwallet.io/download)). The mobile app includes a powerful in-app browser to interact with decentralized applications (DeFi, NFTs and Web3 Gaming).
 * The browser extension, available from the Chrome store [here](https://chrome.google.com/webstore/detail/leap-cosmos-wallet/fcfcfllfndlomdhbehjjcoimbgofdncg/).

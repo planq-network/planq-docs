@@ -172,7 +172,7 @@ Flags:
 
 Global Flags:
       --chain-id string     The network chain ID
-      --home string         directory for config and data (default "/Users/.cronos")
+      --home string         directory for config and data (default "/Users/.planqd")
       --log_format string   The logging format (json|plain) (default "plain")
       --log_level string    The logging level (trace|debug|info|warn|error|fatal|panic) (default "info")
       --trace
@@ -464,7 +464,7 @@ Rolled back state to height <a data-footnote-ref href="#user-content-fn-1">65692
 ### index-eth-tx
 
 {% hint style="danger" %}
-Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example, this will no longer be possible: [https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_)
+Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example, this will no longer be possible: [https://rpc.planq.network/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.planq.network/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_)
 {% endhint %}
 
 After `v1.0.2` nodes can now enable the custom transaction indexer to reduce disk size. \
@@ -474,7 +474,7 @@ The custom tx indexer can be enabled in `app.toml` by setting the `json-rpc.enab
 planqd index-eth-tx backward
 ```
 
-After running the re-index command you will notice in your `.cronos/data/` directory a new file called `evmindexer.db` from which you can see that the size is smaller than the original `tx_index.db` . You can now safely remove the `tx_index.db`file.
+After running the re-index command you will notice in your `.planqd/data/` directory a new file called `evmindexer.db` from which you can see that the size is smaller than the original `tx_index.db` . You can now safely remove the `tx_index.db`file.
 
 
 

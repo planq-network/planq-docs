@@ -260,7 +260,7 @@ The `gov` module enables on-chain governance which allows Planq token holder to 
 * Deposit tokens and fund an active proposal;
 * Vote for an active proposal.
 
-The details about the governance proposal process are available on [The Proposal Process page](https://crypto.org/docs/chain-details/govprocess.html).
+The details about the governance proposal process are available on [The Proposal Process page](https://docs.planq.network/docs/chain-details/govprocess.html).
 
 ### Overview
 
@@ -583,7 +583,7 @@ $ planqd query staking validators -o json | jq
 After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ planqd tx slashing unjail --from node1 --chain-id cronostestnet_338-1
+$ planqd tx slashing unjail --from node1 --chain-id planq_7070-2
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```

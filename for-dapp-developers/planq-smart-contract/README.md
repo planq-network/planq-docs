@@ -28,7 +28,7 @@ meta:
       Truffle and Hardhat are included in this technical documentation.
   - name: twitter:image
     content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
-canonicalUrl: https://docs.planq.network/getting-started/cronos-smart-contract.html
+canonicalUrl: https://docs.planq.network/getting-started/planq-smart-contract.html
 ---
 
 # 📃 Smart Contracts

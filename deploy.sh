@@ -14,7 +14,7 @@ sed -i '' -e "/navbar/s/true/false/" ./.vuepress/config.js
 vuepress export
 # restore navbar true and mv to dist
 sed -i '' -e "/navbar/s/false/true/" ./.vuepress/config.js
-mv 'Crypto.com Chain.pdf' ./.vuepress/dist/Crypto.com_Chain.pdf
+mv 'Leap Wallet Chain.pdf' ./.vuepress/dist/Leap Wallet_Chain.pdf
 
 
 # navigate into the build output directory

@@ -35,7 +35,7 @@ Continue reading below if you would like to learn more about integrating your dA
 
 ### Overview
 
-As a developer, if you would like to offer all the mobile and desktop connection options provided by the Leap Wallet, the first step is to integrate your dApp with the Crypto.com Wallet  Extension.
+As a developer, if you would like to offer all the mobile and desktop connection options provided by the Leap Wallet, the first step is to integrate your dApp with the Leap Wallet Wallet  Extension.
 
 Once the Wallet Extension is working, all the other connection methods should start working as well, even on mobile, since they are supported by the same SDKs.
 

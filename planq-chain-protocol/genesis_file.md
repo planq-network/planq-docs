@@ -33,7 +33,7 @@ canonicalUrl: https://docs.planq.network/chain-details/genesis_file.html
 
 # Genesis
 
-The `genesis.json` file defines the initial state of the Planq Chain. On top of the standard [tendermint genesis](https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#genesis) format, we customize our own genesis file that includes different [modules](genesis\_file.md#module\_overview) and facilitates the special features of the Planq Chain. Sample genesis file can be found [here](https://github.com/crypto-org-chain/cronos-mainnet/blob/master/cronosmainnet\_25-1/genesis.json).
+The `genesis.json` file defines the initial state of the Planq Chain. On top of the standard [tendermint genesis](https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#genesis) format, we customize our own genesis file that includes different [modules](genesis\_file.md#module\_overview) and facilitates the special features of the Planq Chain. Sample genesis file can be found [here](https://github.com/planq-network/networks/blob/main/mainnet/genesis.json).
 
 ## Fields in genesis
 

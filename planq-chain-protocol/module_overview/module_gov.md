@@ -12,7 +12,7 @@ The `gov` module enables on-chain governance which allows Planq Chain token hold
 * Deposit tokens and fund an active proposal;
 * Vote for an active proposal.
 
-The details about the governance proposal process are available on [The Proposal Process page](https://crypto.org/docs/chain-details/govprocess.html).
+The details about the governance proposal process are available on [The Proposal Process page](https://docs.planq.network/docs/chain-details/govprocess.html).
 
 #### Overview
 

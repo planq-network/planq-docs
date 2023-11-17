@@ -67,7 +67,7 @@ The query with params command allows users to query the feemarket parameters.
 
 The parameters can also be checked by browsing to the following REST endpoint on testnet:
 
-[https://rest-t3.cronos.org/ethermint/feemarket/v1/params](https://rest-t3.cronos.org/ethermint/feemarket/v1/params)
+[https://rest.planq.network/ethermint/feemarket/v1/params](https://rest.planq.network/ethermint/feemarket/v1/params)
 
 ```json
 {
