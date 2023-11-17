@@ -14,7 +14,7 @@
 * [🌉 Bridges](for-users/bridge/README.md)
   * [IBC (Planq Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
-  *[Deltaswapp WebApp](for-users/bridge/other\_chain/webapp.md)
+  * [Deltaswapp WebApp (BSC, other EVM Chains)](for-users/bridge/deltaswap/README.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
 * [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 
