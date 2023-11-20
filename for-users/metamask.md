@@ -35,7 +35,7 @@ canonicalUrl: https://docs.planq.network/getting-started/metamask.html
 
 # 🦊 MetaMask Configuration
 
-In this guide, you will learn how to use the MetaMask extension on Google Chrome to send and receive tokens, and interact with the Planq network.
+In this guide, you will learn how to use the MetaMask extension to send and receive tokens and interact with the Planq network.
 
 ## Connecting with MetaMask
 
@@ -43,14 +43,20 @@ First, you will need to connect your MetaMask wallet to the Planq network:
 
 * Click the "**My Account**" button in the top right corner. Then select **"Networks"** in the settings menu.
 
-![](../.gitbook/assets/metamask\_1.png)
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-*   Click "**Add Network**":
+* Click "**Add Network**":
 
-    ![](../.gitbook/assets/metamask\_2.png)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+This button should open a Webpage, if you scroll down you should see an option to add a network manually.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Mainnet" %}
+**Fill in the following details:**
+
 * **Name**: Planq
 * **New RPC URL:**`https://evm-rpc.planq.network`;
 * **Chain ID: 7070**
@@ -59,7 +65,7 @@ First, you will need to connect your MetaMask wallet to the Planq network:
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/Metamask-settings.png)
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * After saving the network configuration, we should be able to see the token in your address.
 
@@ -77,7 +83,7 @@ It will show your private key and you can copy it for the next step. Click the "
 
 Paste your private key string from the previous step and click "**Import"**.
 
-![](<../.gitbook/assets/metamask\_3 (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Once it has been connected, you should see your token balance and you can then begin performing transactions using your MetaMask wallet!
 

@@ -1,6 +1,6 @@
 # 🔥 Crypto Wallets
 
-Planq is supported by more than 30 wallets, some of which are shown [here](https://planq.network/ecosystem).&#x20;
+Planq is supported by more than 30 wallets, some of which are shown [here](https://planq.network/ecosystem).
 
 ## Leap Wallet
 
@@ -19,7 +19,7 @@ You can now use your Ledger hardware wallet on Planq chain.
 
 In the Ledger Live companion app, you can see your PLQ holdings on Planq chain. This can be accomplished by selecting "Add account" and then Planq (PLQ):
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (9).png>)
 
 ## Keplr Wallet
 
@@ -36,5 +36,3 @@ The MetaMask mobile app and browser extension require additional configuration s
 The crypto wallet developed by Brave Browser can also be used to check your cryptocurrency balances on Planq and to interact with decentralized applications.
 
 See [Brave Wallet](brave-wallet.md) for an easy-to-follow guide of configuration steps.
-
-

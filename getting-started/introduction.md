@@ -17,7 +17,8 @@ meta:
       providing developers with the ability to rapidly port apps from Ethereum
       and EVM-compatible chains.
   - name: og:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
   - name: twitter:title
     content: Planq | Planq EVM Chain | Testnet Introduction
   - name: twitter:site
@@ -30,7 +31,8 @@ meta:
       providing developers with the ability to rapidly port apps from Ethereum
       and EVM-compatible chains.
   - name: twitter:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
 canonicalUrl: https://docs.planq.network/chain-details/introduction.html
 ---
 
@@ -40,7 +42,7 @@ canonicalUrl: https://docs.planq.network/chain-details/introduction.html
 
 The Planq Mainnet was launched on 17 November 2022.
 
-Planq is the leading EVM-compatible chain build on the Cosmos SDK.
+Planq is the leading EVM-compatible chain built on the Cosmos SDK.
 
 Planq aims to massively scale DeFi and GameFi by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
 
