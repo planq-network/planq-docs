@@ -49,9 +49,7 @@ Please browse the navigation bar of this documentation where you can find refere
 
 ## What is Planq?
 
-[Planq](https://planq.network/) is a leading Ethereum-compatible layer-1 blockchain network built on the Cosmos SDK. Today, the Planq ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
-
-Shortly after launch in November 2021, Planq achieved a top 100 position amongst all chains by TVL. It is home to more than 1 million users and 500+ dApps.
+[Planq](https://planq.network/) is a leading Ethereum-compatible layer-1 blockchain network built on the Cosmos SDK. At Planq, the vision is to create a global community empowered by our mobile-first decentralized permissionless ecosystem, where financial freedom is accessible and transparent for all, not just the wealthy and fortunate.
 
 Transaction fees are paid in the native token of the Planq Blockchain,[ $PLQ. ](https://www.coingecko.com/nl/coins/planq)
 
@@ -61,11 +59,11 @@ If you are a Web3 application creator, there are 3 main reasons to build on Plan
 
 * EVM compatible – Solidity and all the EVM tools just work out of the box.
 * Strategic partnership with [Leap Wallet](https://www.leapwallet.io/) – easy on-ramp to your dApp.
-* \#PLQ - a highly engaged user and builder community of >80 million people worldwide, who are keen to try the latest and greatest apps.
+* Harness the power of the interoperable Cosmos ecosystem with their top of the class IBC-Bridge.
 
 As an application founder/developer on Planq, you can leverage:
 
-* Wrapped versions of most of the world’s top 50 cryptocurrencies
+* [Wrapped versions of most of the world’s top 50 cryptocurrencies](#user-content-fn-1)[^1]
 * 30+ leading wallets (including Leap Wallet, MetaMask, and Keplr Wallet)
 * Ethermint, a Ethereum Virtual Machine module built by the open-source Cosmos SDK community.
 * IBC cross-chain connectivity to Cosmos chains.
@@ -98,3 +96,6 @@ Code repository: [GitHub](https://github.com/planq-network/planq)
 **Brand assets:**
 
 {% file src=".gitbook/assets/planq-assets.zip" %}
+
+[^1]: do you want to keep this?
+

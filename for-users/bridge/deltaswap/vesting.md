@@ -66,7 +66,7 @@ In addition to bridge fees distribution, veDELTA grants its holders voting power
 
 3. **I lock DELTA for 4 years, why am I getting less veDELTAs rather than 1 DELTA : 1veDELTA**
 
-It is because locktime is rounded down to weeks. The locking period recorded by the veDELTA system is shorter than the actual one.
+It is because the lock time is rounded down to weeks. The locking period recorded by the veDELTA system is shorter than the actual one.
 
 4. **How many rewards will be distributed?**
 
@@ -74,11 +74,11 @@ According to the veDELTA proposal, 100% of the quarterly bridge fees will be dis
 
 5. **On which blockchain does veDELTA launch?**
 
-veDELTA is launched on Planq as DELTA is originally launched on Planq.
+[veDELTA is launched on Planq as DELTA is originally launched on Planq.](#user-content-fn-1)[^1]
 
 6. **How long should I lock DELTA?**
 
-It’s totally up to you. The maximum lock-up time is 4 years. The longer you lock DELTA, the more benefits you receive.
+It’s totally up to the individual. The maximum lock-up time is 4 years. The longer you lock DELTA, the more benefits you receive.
 
 7. **When can I stake DELTA?**
 
@@ -90,7 +90,7 @@ Rewards distribution started on May 12th at 02:00 AM UTC and it's ongoing.
 
 9. **When can I claim rewards?**
 
-WPLQ rewards will be calculated on a weekly basis after every Thursday’s snapshot. For example, if you stake DELTA before the first snapshot on May 12th at 02:00 AM UTC, you will be able to claim rewards afterward.
+WPLQ rewards will be calculated on a weekly basis after every Thursday’s snapshot. For example, if you stake DELTA before the first snapshot on May 12th at 02:00 AM UTC, you will be able to claim rewards afterwards.
 
 10. **How many times can I claim rewards?**
 
@@ -102,8 +102,11 @@ Your rewards build up and you can claim whenever.
 
 12. **How are rewards calculated?**
 
-Rewards will be calculated by the reward contract according to your power of veDELTA. The more veDELTA you hold, more rewards you get. For more information, please refer to the reward contract​
+Rewards will be calculated by the reward contract according to your power of veDELTA. The more veDELTA you hold, the more rewards you get. For more information, please refer to the reward contract​
 
 13. **What will happen to my veDELTA as time passes?**
 
 If you don’t extend the locking durations, your veDELTA power will decay linearly over time.
+
+[^1]: What is this sentence
+

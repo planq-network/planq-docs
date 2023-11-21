@@ -44,7 +44,7 @@ The Planq Mainnet was launched on 17 November 2022.
 
 Planq is the leading EVM-compatible chain built on the Cosmos SDK.
 
-Planq aims to massively scale DeFi and GameFi by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
+Planq aims to massively scale DeFi and Mobile-accessible dApps by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
 
 Planq is powered by the Planq ($PLQ) cryptocurrency for the payment of transaction fees.
 

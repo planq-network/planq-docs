@@ -6,14 +6,14 @@ description: For end-users
 
 **How can I get started on Planq chain?**
 
-* For most end-users, the easiest way to get started on Planq chain is to start with a [BingX](https://bingx.com/) account and then transfer some $PLQ to your self-custodial wallet on Planq via the "withdraw" feature.
-* With respect to the choice of a self-custodial wallet, a Leap Wallet, MetaMask, or Brave wallet is a good place to start. You can start trying other wallets once you become more familiar with self-custody.
+* For most end-users, the easiest way to get started on Planq chain is to start with a [BingX](https://bingx.com/)[ ](https://bingx.com/invite/8LXNEN)account and then transfer some $PLQ to your self-custodial wallet on Planq via the "withdraw" feature.
+* With respect to the choice of a self-custodial wallet, a Leap Wallet, MetaMask, or Brave wallet are  good places to start. You can start trying other wallets once you become more familiar with self-custody.
 * Don't forget that you need $PLQ in your wallet in order to pay for transaction fees on the Planq chain.
 
 **Where can I find the list of applications available on the Planq chain?**
 
 * In the Leap Wallet, you can check the "browser" tab where you can see a selection of apps.
-* You can also visit https://planq.network/ecosystem to browser a database of available dapps (decentralized apps).
+* You can also visit https://planq.network/ecosystem to browse a database of available dApps (decentralized apps).
 
 **I have transferred cryptocurrencies by mistake to an address on Planq chain. Can someone help me to recover the funds?**
 

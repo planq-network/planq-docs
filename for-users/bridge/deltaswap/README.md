@@ -1,32 +1,34 @@
 # Deltaswapp WebApp (BSC, other EVM Chains)
 
-## Transfer assets from Planq Chain using Deltaswap Web App
+## Transfer assets from and to Planq Chain using Deltaswap Web App
 
 ### Step-by-step walkthrough
 
 **Step 1: Connect your wallet**
 
-Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently support browser-compatible versions of Metamask, Keplr, and Leap Wallet. Once a connection request is sent, look for a popup from your wallet interface or click into the wallet extension to give it consent.
+Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently support browser-compatible versions of Metamask,[ Keplr, and Leap Wallet.](#user-content-fn-1)[^1] Once a connection request is sent, look for a popup from your wallet interface or click into the wallet extension to give it consent.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note 1: If you are bridging assets to or from Planq, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Osmosis ⇔ Planq only is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other\_chain/keplr.md).
+Note 2: Currently, Osmosis ⇔ Planq is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../../keplr.md).
 {% endhint %}
-
-![centered image](../../../.gitbook/assets/webapp\_connect\_wallet.png)
 
 **Step 2. Select Network and Token**
 
-Select the origin chain on the left and destination chain on the right in the Planq Bridge interface. We will do our best to automatically suggest your wallet network to match the desired transfer parameters. However, a manual adjustment on your end may be needed to set your wallet to match the selected network.
+Select the origin chain on the left and the destination chain on the right in the Planq Bridge interface. We will do our best to automatically suggest your wallet network to match the desired transfer parameters. However, a manual adjustment on your end may be needed to set your wallet to match the selected network.
 
 If you are transferring to or from Planq, you need to specify the destination address by inputting the address manually or connecting a second wallet to receive your funds.
 
 Once the networks are chosen, select the asset you would like to transfer.
 
-![centered image](../../../.gitbook/assets/webapp\_select\_network.png)
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Step 3. Enter the amount**
 
@@ -40,17 +42,11 @@ During the promotional launch period, the network fee incurred by the bridge wil
 
 Before bridging a large amount, we encourage testing a transfer of a small amount first to ensure that all settings are correct.
 
-![centered image](../../../.gitbook/assets/webapp\_enter\_amout.png)
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-![](../../../.gitbook/assets/4a\_confirm\_wallet\_txn.png)
+**Step 4. Connect your token to the chain of destination and pay the gas fees**
 
-![](../../../.gitbook/assets/4b\_confirm\_wallet\_txn.png)
-
-![](../../../.gitbook/assets/4c\_confirm\_wallet\_txn.png)
-
-**Step 4. Confirm the transaction**
-
-Once all the transfer settings have been confirmed, a transaction confirmation page will pop up, summarising the transaction.
+Once you have decided how many tokens you want to send
 
 This will send a transaction request to your wallet. Please confirm the request in your wallet to ultimately authorise the transfer.
 
@@ -71,3 +67,5 @@ Thank you for using the Planq Bridge and supporting the Planq ecosystem.
 ![centered image](../../../.gitbook/assets/5\_txn\_complete.png)
 
 ![centered image](../../../.gitbook/assets/5\_history\_table.png)
+
+[^1]: do we?

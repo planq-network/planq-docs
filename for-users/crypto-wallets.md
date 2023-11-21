@@ -19,7 +19,7 @@ You can now use your Ledger hardware wallet on Planq chain.
 
 In the Ledger Live companion app, you can see your PLQ holdings on Planq chain. This can be accomplished by selecting "Add account" and then Planq (PLQ):
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 ## Keplr Wallet
 
