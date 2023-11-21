@@ -1,6 +1,6 @@
 # IBC (Planq Chain, other Cosmos chains)
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Introduction
 
@@ -34,8 +34,8 @@ We are constantly working on adding new tokens and blockchains. If you have any 
 
 The Deltaswap Bridge can be found at [https://swap.deltaswap.io](https://swap.deltaswap.io).
 
-{% content-ref url="deltaswap/" %}
-[deltaswap](deltaswap/)
+{% content-ref url="../deltaswap/" %}
+[deltaswap](../deltaswap/)
 {% endcontent-ref %}
 
 ## Via Leap Wallet

@@ -90,7 +90,7 @@ Rewards distribution started on May 12th at 02:00 AM UTC and it's ongoing.
 
 9. **When can I claim rewards?**
 
-WPLQ rewards will be calculated on a weekly basis after every Thursday’s snapshot. For example, if you stake DELTA before the first snapshot on May 12th at 02:00 AM UTC, you will be able to claim rewards afterwards.
+WPLQ rewards will be calculated weekly after every Thursday’s snapshot. For example, if you stake DELTA before the first snapshot on May 12th at 02:00 AM UTC, you will be able to claim rewards afterwards.
 
 10. **How many times can I claim rewards?**
 

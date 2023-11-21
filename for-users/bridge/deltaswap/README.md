@@ -15,7 +15,7 @@ Note 1: If you are bridging assets to or from Planq, you may specify the destina
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Osmosis ⇔ Planq is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../../keplr.md).
+Note 2: Currently, Osmosis ⇔ Planq is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other\_chain/keplr.md).
 {% endhint %}
 
 **Step 2. Select Network and Token**

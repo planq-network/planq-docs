@@ -132,9 +132,9 @@ By default, the script will be using your local host `"127.0.0.1"` - If you are 
 npm run deploy-contract-planq
 ```
 
-### Step 8. Obtain Contract address from console and input to Metamask
+### Step 8. Obtain Contract address from the console and input to Metamask
 
-Correct balance will be shown on Metamask page
+the Correct balance will be shown on Metamask page
 
 ```bash
 PlanqToken deployed to: 0x5F803c894a0A16B46fe5982fB5D89eb334eAF68
