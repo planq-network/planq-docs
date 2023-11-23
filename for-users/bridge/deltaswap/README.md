@@ -52,8 +52,6 @@ This will send a transaction request to your wallet. Please confirm the request 
 
 After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../faq.md).
 
-![centered image](../../../.gitbook/assets/webapp\_confirmation\_screen.png)
-
 **Step 5. Bridging assets**
 
 After the transaction is confirmed from the wallet, the bridge operation will commence.
@@ -63,9 +61,5 @@ First, we will initiate and wait for the deposit of assets on the origin chain. 
 Even if you dismiss, quit, or refresh the page, a small popup reminder will be available to indicate an in-progress transaction. A “Transfer Completed” message will confirm that the transaction has been carried out successfully. You may also see a full record of past transactions tied to your wallet in the History tab.
 
 Thank you for using the Planq Bridge and supporting the Planq ecosystem.
-
-![centered image](../../../.gitbook/assets/5\_txn\_complete.png)
-
-![centered image](../../../.gitbook/assets/5\_history\_table.png)
 
 [^1]: do we?

@@ -6,26 +6,24 @@
 IMPORTANT
 
 In order to use Snapshot you need to first complete [Step 3-2](./#step-3-2.-run-everything) with the latest binary.
-
-\
 {% endhint %}
 
 Syncing Planq could be a time-consuming process, that's why the Planq Chain team has partnered with Chainlayer to provide the “**Snapshot**” service and make the process more efficient for our users.
 
-Users can visit [Snapshot Planq page](https://polkachu.com/tendermint_snapshots/planq) and download the snapshots for Planq Chain with different pruning settings.
+Users can visit [Snapshot Planq page](https://polkachu.com/tendermint\_snapshots/planq) and download the snapshots for Planq Chain with different pruning settings.
 
 ### Step 1: Snapshot Download
 
 After executing the command `./planqd` start at [Step 3-2](./#step-3-2.-run-everything) Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
-Users can visit [Snapshot Planq page](https://polkachu.com/tendermint_snapshots/planq) and download the snapshots for Planq Chain with different pruning settings. \
+Users can visit [Snapshot Planq page](https://polkachu.com/tendermint\_snapshots/planq) and download the snapshots for Planq Chain with different pruning settings.\
 \
 Both RocksDB and LevelDB snapshots are now available for Planq Chain.
 
 ### Step 2: Snapshot Extract
 
 To start with Snapshot, you need to run `brew install lz4` to install lz4 in a new terminal.\
-Then download the file with preferred pruning settings directly from [Snapshot](https://polkachu.com/tendermint_snapshots/planq).
+Then download the file with preferred pruning settings directly from [Snapshot](https://polkachu.com/tendermint\_snapshots/planq).
 
 **planq\_7070-2-pruned**
 
