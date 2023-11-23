@@ -9,8 +9,6 @@ The [Leap Wallet](https://www.leapwallet.io/download) is a self-custodial crypto
 * The mobile wallet, available for iOS and Android (download [here](https://www.leapwallet.io/download)). The mobile app includes a powerful in-app browser to interact with decentralized applications (DeFi, NFTs and Web3 Gaming).
 * The browser extension, available from the Chrome store [here](https://chrome.google.com/webstore/detail/leap-cosmos-wallet/fcfcfllfndlomdhbehjjcoimbgofdncg/).
 
-The DeFi Wallet is not just for DeFi. One unique feature of the Leap Wallet mobile app is the NFT tab, where you can see, transfer, buy and sell all your self-custodial NFTs on Planq chain.
-
 You can import your accounts from any other self-custodial crypto wallet into the Leap Wallet by importing your seed phrase under "Import wallet".
 
 ## Ledger hardware wallet
