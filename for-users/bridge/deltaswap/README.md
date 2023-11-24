@@ -8,7 +8,7 @@
 
 Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently support browser-compatible versions of Metamask,[ Keplr, and Leap Wallet.](#user-content-fn-1)[^1] Once a connection request is sent, look for a popup from your wallet interface or click into the wallet extension to give it consent.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note 1: If you are bridging assets to or from Planq, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
