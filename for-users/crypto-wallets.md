@@ -13,11 +13,9 @@ You can import your accounts from any other self-custodial crypto wallet into th
 
 ## Ledger hardware wallet
 
-You can now use your Ledger hardware wallet on Planq chain.
+You can now use your Ledger hardware wallet on the Planq chain.
 
-In the Ledger Live companion app, you can see your PLQ holdings on Planq chain. This can be accomplished by selecting "Add account" and then Planq (PLQ):
-
-![](<../.gitbook/assets/image (9) (1).png>)
+For a step by step guide on Ledegrs please refer to this [link](https://docs.planq.network/users/wallets/ledger.html).
 
 ## Keplr Wallet
 
