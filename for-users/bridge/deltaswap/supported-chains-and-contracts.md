@@ -1,4 +1,4 @@
-# Contracts
+# Supported Chains and Contracts
 
 Currently supported chains:
 
