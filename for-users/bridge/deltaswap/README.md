@@ -8,14 +8,14 @@
 
 Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently support browser-compatible versions of Metamask,[ Keplr, and Leap Wallet.](#user-content-fn-1)[^1] Once a connection request is sent, look for a popup from your wallet interface or click into the wallet extension to give it consent.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note 1: If you are bridging assets to or from Planq, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Osmosis ⇔ Planq is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../other\_chain/keplr.md).
+Note 2: Currently, Osmosis ⇔ Planq is only supported by Keplr. To learn how to add your Planq wallet to Keplr, please click [here](../../keplr.md).
 {% endhint %}
 
 **Step 2. Select Network and Token**
@@ -26,7 +26,7 @@ If you are transferring to or from Planq, you need to specify the destination ad
 
 Once the networks are chosen, select the asset you would like to transfer.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -42,7 +42,7 @@ During the promotional launch period, the network fee incurred by the bridge wil
 
 Before bridging a large amount, we encourage testing a transfer of a small amount first to ensure that all settings are correct.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4. Connect your token to the chain of destination and pay the gas fees**
 

@@ -26,7 +26,7 @@ Let's connect your Brave Wallet to the Planq network:
   A new window to add config for a new network will pop up.\
   Under "**Search network**", select "**7070 Planq Network"** from the drop-down menu for Planq Mainnet. Now, most fields should be pre-populated, as shown below:
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 * In order to display the Planq logo, set the "**Icon URLs**" field to
 
@@ -41,4 +41,4 @@ and click **"Submit".**
 
 
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>

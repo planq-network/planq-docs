@@ -43,15 +43,15 @@ First, you will need to connect your MetaMask wallet to the Planq network:
 
 * Click the "**My Account**" button in the top right corner. Then select **"Networks"** in the settings menu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 * Click "**Add Network**":
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 This button should open a Webpage, if you scroll down you should see an option to add a network manually.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Mainnet" %}
@@ -65,7 +65,7 @@ This button should open a Webpage, if you scroll down you should see an option t
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 * After saving the network configuration, we should be able to see the token in your address.
 
@@ -83,7 +83,7 @@ It will show your private key and you can copy it for the next step. Click the "
 
 Paste your private key string from the previous step and click "**Import"**.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Once it has been connected, you should see your token balance and you can then begin performing transactions using your MetaMask wallet!
 
