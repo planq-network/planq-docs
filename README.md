@@ -32,7 +32,7 @@ meta:
       https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
 canonicalUrl: https://docs.planq.network/getting-started/
 description: What is Planq? Why build on Planq? How to connect?
-cover: .gitbook/assets/Planq%20generic%20background%201.png
+cover: .gitbook/assets/twitter_cover_png.png
 coverY: 0
 ---
 
