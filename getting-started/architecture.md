@@ -56,7 +56,7 @@ Please visit the [GitHub repository](https://github.com/planq-network/planq) to 
 
 ## **Consensus**
 
-The Planq consensus is commonly referred to as a proof-of-stake (POS) consensus, as it is proof-of-stake consensus.
+The Planq consensus is commonly referred to as a proof-of-stake (POS) consensus.
 
 Please refer to the [Planq repository](https://github.com/planq-network/planq) for details.
 
