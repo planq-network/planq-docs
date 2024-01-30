@@ -60,6 +60,7 @@
 
 ## PLANQ CHAIN PROTOCOL
 
+* [Whitepaper](planq-chain-protocol/whitepaper.md)
 * [Chain ID and Address Format](planq-chain-protocol/chain-id.md)
 * [Planq General FAQ](planq-chain-protocol/planq-general-faq.md)
 * [Genesis](planq-chain-protocol/genesis\_file.md)
