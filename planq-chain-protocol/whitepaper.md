@@ -1,7 +1,5 @@
 # Whitepaper
 
-Protocol
-
 ## Protocol
 
 Planq Whitepaper: Planq is the very first cryptocurrency to keep mobile platform usability at heart, taking a step away from dependency on desktop services.
