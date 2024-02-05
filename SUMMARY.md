@@ -33,6 +33,7 @@
   * [Contract Deployment](for-dapp-developers/planq-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/planq-smart-contract/contract-verification.md)
   * [Best Practices](for-dapp-developers/planq-smart-contract/defi-practice.md)
+  * [Name Service](for-dapp-developers/planq-smart-contract/name-service.md)
   * [Token Contract Addresses](for-dapp-developers/planq-smart-contract/token-contract-addresses.md)
 * [💻 dApp Creation](for-dapp-developers/chain-integration/README.md)
   * [Free and commercial RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
