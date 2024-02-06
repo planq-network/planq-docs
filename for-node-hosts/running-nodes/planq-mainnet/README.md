@@ -4,18 +4,19 @@ meta:
     content: Planq | Planq EVM Chain | Running Nodes On Mainnet
   - name: description
     content: >-
-      Learn how to setup a Validator or a full node on Planq Mainnet
-      Beta planq_7070-2 in this technical documentation.
+      Learn how to setup a Validator or a full node on Planq Mainnet Beta
+      planq_7070-2 in this technical documentation.
   - name: og:title
     content: Planq | Planq EVM Chain | Running Nodes On Mainnet
   - name: og:type
     content: Website
   - name: og:description
     content: >-
-      Learn how to setup a Validator or a full node on Planq Mainnet
-      Beta planq_7070-2 in this technical documentation.
+      Learn how to setup a Validator or a full node on Planq Mainnet Beta
+      planq_7070-2 in this technical documentation.
   - name: og:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
   - name: twitter:title
     content: Planq | Planq EVM Chain | Running Nodes On Mainnet
   - name: twitter:site
@@ -24,10 +25,11 @@ meta:
     content: summary_large_image
   - name: twitter:description
     content: >-
-      Learn how to setup a Validator or a full node on Planq Mainnet
-      Beta planq_7070-2 in this technical documentation.
+      Learn how to setup a Validator or a full node on Planq Mainnet Beta
+      planq_7070-2 in this technical documentation.
   - name: twitter:image
-    content: https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
+    content: >-
+      https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.png
 canonicalUrl: https://docs.planq.network/getting-started/planq-mainnet.html
 ---
 
@@ -45,21 +47,21 @@ We officially support macOS, Windows, and Linux only. Other platforms may work b
 
 To run Planq Mainnet nodes, you will need a machine with the following minimum requirements to run different types of nodes:
 
-* Pruned node (setting pruning=everything)&#x20;
-  * Storage: \~25G\*&#x20;
-  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+* Pruned node (setting pruning=everything)
+  * Storage: \~25G\*
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*
   * CPU: 4-core
-* Default full node (setting pruning=default)&#x20;
-  * Storage: \~1.5T\*\*&#x20;
-  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+* Default full node (setting pruning=default)
+  * Storage: \~1.5T\*\*
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*
   * CPU: 4-core
-* Archive node (setting pruning=nothing)&#x20;
-  * Storage: \~2.8T\*\*&#x20;
-  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+* Archive node (setting pruning=nothing)
+  * Storage: \~2.8T\*\*
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*
   * CPU: 4-core
 
-_\*Only in case state-sync enabled._ \
-_\*\* e.g. Note that size of snapshots from Snapshot will keep growing._ \
+_\*Only in case state-sync enabled._\
+_\*\* e.g. Note that size of snapshots from Snapshot will keep growing._\
 _\*\*\* Note that during a state-sync the node might require higher RAM than 3GB but, returns to normal after state-sync has finished._
 
 {% hint style="info" %}
@@ -70,7 +72,7 @@ Note that all depends on the type of node you are running and settings will vary
 {% tab title="Mainnet" %}
 * [Seeds for Fullnode](https://raw.githubusercontent.com/planq-network/networks/main/mainnet/seeds.txt)
 * [Genesis files](https://raw.githubusercontent.com/planq-network/networks/main/mainnet/genesis.json)
-* Binaries for [Linux](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Linux_x86_64.tar.gz), Mac ([Intel x86](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Darwin_x86_64.tar.gz) / [M1](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Darwin_arm64.tar.gz)) and [Windows](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Windows_x86_64.zip)
+* Binaries for [Linux](https://github.com/planq-network/planq/releases/download/v1.1.0/planq\_1.1.0\_linux\_amd64.tar.gz), Mac ([Intel x86](https://github.com/planq-network/planq/releases/download/v1.1.0/planq\_1.1.0\_darwin\_amd64.tar.gz) / [M1](https://github.com/planq-network/planq/releases/download/v1.1.0/planq\_1.1.0\_darwin\_arm64.tar.gz)) and [Windows](https://github.com/planq-network/planq/releases/download/v1.1.0/planq\_1.1.0\_windows\_amd64.zip)
 {% endtab %}
 {% endtabs %}
 
@@ -83,20 +85,20 @@ The following is the minimal setup for a **validator node** / **full node**.
 {% endhint %}
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration.\
-Binaries for **Mac** ([Intel x86](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Darwin_x86_64.tar.gz) / [M1](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Darwin_arm64.tar.gz)) and [Windows](https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Windows_x86_64.zip)
+Binaries for **Mac** ([Intel x86](https://github.com/planq-network/planq/releases/download/v1.0.8/planq\_1.0.8\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/planq-network/planq/releases/download/v1.0.8/planq\_1.0.8\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/planq-network/planq/releases/download/v1.0.8/planq\_1.0.8\_Windows\_x86\_64.zip)
 
 *   To install released **Planq Mainnet binaries** from github:
 
     ```bash
-    $ curl -LOJ https://github.com/planq-network/planq/releases/download/v1.0.8/planq_1.0.8_Linux_x86_64.tar.gz
-    $ tar -zxvf planq_1.0.8_Linux_x86_64.tar.gz
+    $ curl -LOJ https://github.com/planq-network/planq/releases/download/v1.1.0/planq_1.1.0_linux_amd64.tar.gz
+    $ tar -zxvf planq_1.1.0_linux_amd64.tar.gz
     ```
 
     Afterward, you can check the version of `planqd` by
 
     ```bash
     $ ./planqd version
-    1.0.8
+    1.1.0
     ```
 
 ## Step 2. Configure `planqd`
@@ -192,8 +194,6 @@ This page only shows the minimal setup for validator / full node.
 
 Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
 {% endhint %}
-
-
 
 Once `planqd` has been configured, we are ready to start the ode and sync the blockchain data:
 
