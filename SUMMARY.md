@@ -17,6 +17,7 @@
   * [IBC (Planq Chain, other Cosmos chains)](for-users/bridge/other\_chain.md)
   * [Deltaswapp WebApp (BSC, other EVM Chains)](for-users/bridge/deltaswap/README.md)
     * [Assumptions](for-users/bridge/deltaswap/assumptions.md)
+    * [DELTA Token](for-users/bridge/deltaswap/delta-token.md)
     * [Governor](for-users/bridge/deltaswap/governor.md)
     * [Operations](for-users/bridge/deltaswap/operations.md)
     * [Supported Chains and Contracts](for-users/bridge/deltaswap/supported-chains-and-contracts.md)
