@@ -74,7 +74,7 @@ According to the veDELTA proposal, 100% of the quarterly bridge fees will be dis
 
 5. **On which blockchain does veDELTA launch?**
 
-[veDELTA is launched on Planq as DELTA is originally launched on Planq.](#user-content-fn-1)[^1]
+veDELTA is the vested version of DELTA and it was launched on Planq.
 
 6. **How long should I lock DELTA?**
 
@@ -82,11 +82,11 @@ It’s totally up to the individual. The maximum lock-up time is 4 years. The lo
 
 7. **When can I stake DELTA?**
 
-Staking will be open on May 9th at 10:00 AM UTC and you can stake anytime after that.
+Staking will be open on Nov 17th at 10:00 AM UTC and you can stake anytime after that.
 
 8. **When will the rewards begin?**
 
-Rewards distribution started on May 12th at 02:00 AM UTC and it's ongoing.
+Rewards distribution started on Feb 14th at 02:00 PM UTC and it's ongoing.
 
 9. **When can I claim rewards?**
 
@@ -107,6 +107,3 @@ Rewards will be calculated by the reward contract according to your power of veD
 13. **What will happen to my veDELTA as time passes?**
 
 If you don’t extend the locking durations, your veDELTA power will decay linearly over time.
-
-[^1]: What is this sentence
-
