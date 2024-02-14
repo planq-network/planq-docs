@@ -18,6 +18,7 @@
   * [Deltaswapp WebApp (BSC, other EVM Chains)](for-users/bridge/deltaswap/README.md)
     * [Assumptions](for-users/bridge/deltaswap/assumptions.md)
     * [DELTA Token](for-users/bridge/deltaswap/delta-token.md)
+    * [EVM Chain Integration](for-users/bridge/deltaswap/evm-chain-integration.md)
     * [Governor](for-users/bridge/deltaswap/governor.md)
     * [Operations](for-users/bridge/deltaswap/operations.md)
     * [Supported Chains and Contracts](for-users/bridge/deltaswap/supported-chains-and-contracts.md)
