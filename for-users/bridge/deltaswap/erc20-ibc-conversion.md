@@ -61,3 +61,16 @@
 
 
 
+
+
+### How to IBC transfer converted ERC20 tokens
+
+1. Visit [https://deltaswap.io/convert](https://deltaswap.io/convert)
+2. Click the "two arrow" button next to your ERC20 balance to convert it to IBC
+3.
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2024-02-23 184506.png" alt=""><figcaption><p>Click the "paperplane" button on the right</p></figcaption></figure>
+4.
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2024-02-23 184538.png" alt=""><figcaption><p>Input the amount, select the destination chain and input the destination address</p></figcaption></figure>
+5. Click "Send"
