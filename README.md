@@ -63,7 +63,7 @@ If you are a Web3 application creator, there are 3 main reasons to build on Plan
 
 As an application founder/developer on Planq, you can leverage:
 
-* [Wrapped versions of most of the world’s top 50 cryptocurrencies](#user-content-fn-1)[^1]
+* Wrapped versions of most of the world’s top 50 cryptocurrencies
 * 30+ leading wallets (including Leap Wallet, MetaMask, and Keplr Wallet)
 * Ethermint, a Ethereum Virtual Machine module built by the open-source Cosmos SDK community.
 * IBC cross-chain connectivity to Cosmos chains.
@@ -96,6 +96,3 @@ Code repository: [GitHub](https://github.com/planq-network/planq)
 **Brand assets:**
 
 {% file src=".gitbook/assets/planq-assets.zip" %}
-
-[^1]: do you want to keep this?
-
