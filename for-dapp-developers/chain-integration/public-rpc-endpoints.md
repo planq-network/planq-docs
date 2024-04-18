@@ -32,11 +32,26 @@ If you are sending large numbers of transactions from your backend, consider set
   * [https://grpc.planq.network/](http://grpc.planq.network/)
 {% endtab %}
 
-{% tab title="3th party" %}
+{% tab title="Atlas Testnet" %}
+
+
+* **EVM HTTP JSON RPC (Web3 compatible)**
+  * https://evm-rpc-atlas.planq.network/
+* **Tendermint RPC**
+  * https://rpc-atlas.planq.network/
+* **Cosmos RESTful**
+  * https://rest-atlas.planq.network/
+* **Cosmos gRPC Based**
+  * https://grpc-atlas.planq.network/
+{% endtab %}
+
+{% tab title="3rd party" %}
 **EVM HTTP JSON RPC (Web3 compatible)**
 
 Mainnet
 
 * [https://jsonrpc.planq.nodestake.top/](https://jsonrpc.planq.nodestake.top/) (Nodestake)
+
+
 {% endtab %}
 {% endtabs %}
