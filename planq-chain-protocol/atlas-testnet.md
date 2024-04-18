@@ -27,6 +27,12 @@ atplanq
 
 
 
+**Metamask Network Settings**
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-04-18 180608.png" alt=""><figcaption></figcaption></figure>
+
+
+
 **Faucet**
 
 Please join our [Telegram](https://t.me/planqnetwork)
