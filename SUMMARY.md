@@ -35,7 +35,7 @@
 * [📃 Smart Contracts](for-dapp-developers/planq-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/planq-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/planq-smart-contract/contract-verification.md)
-  * [Multicall](for-dapp-developers/planq-smart-contract/multicall.md)
+  * [Multicall & Permit2](for-dapp-developers/planq-smart-contract/multicall-and-permit2.md)
   * [Best Practices](for-dapp-developers/planq-smart-contract/defi-practice.md)
   * [Name Service](for-dapp-developers/planq-smart-contract/name-service.md)
   * [Polygon ID](for-dapp-developers/planq-smart-contract/polygon-id.md)
