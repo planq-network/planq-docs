@@ -31,7 +31,9 @@ atplanq
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-04-18 180608.png" alt=""><figcaption></figcaption></figure>
 
+**Explorer**
 
+{% embed url="https://testnet-explorer.konsortech.xyz/planq" %}
 
 **Faucet**
 

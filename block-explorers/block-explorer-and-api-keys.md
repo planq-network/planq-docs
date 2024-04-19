@@ -3,9 +3,13 @@
 ### Block Explorers
 
 {% tabs %}
-{% tab title="Planq Mainnet" %}
+{% tab title="Mainnet" %}
 * [https://evm.planq.network/](https://evm.planq.network)
 * [https://explorer.planq.network/](https://explorer.planq.network/)
+{% endtab %}
+
+{% tab title="Atlas Testnet" %}
+[https://testnet-explorer.konsortech.xyz/planq](https://testnet-explorer.konsortech.xyz/planq)
 {% endtab %}
 {% endtabs %}
 
