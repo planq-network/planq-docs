@@ -9,7 +9,9 @@
 {% endtab %}
 
 {% tab title="Atlas Testnet" %}
-[https://testnet-explorer.konsortech.xyz/planq](https://testnet-explorer.konsortech.xyz/planq)
+{% embed url="https://testnet-explorer.konsortech.xyz/planq" %}
+
+{% embed url="https://explorer.whenmoonwhenlambo.money/planq-testnet/" %}
 {% endtab %}
 {% endtabs %}
 
