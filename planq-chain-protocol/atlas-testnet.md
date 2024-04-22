@@ -18,10 +18,13 @@ atplanq
 
 * **EVM HTTP JSON RPC (Web3 compatible)**
   * https://evm-rpc-atlas.planq.network/
+  * https://planq\_testnet\_evm.chain.whenmoonwhenlambo.money/
 * **Tendermint RPC**
   * https://rpc-atlas.planq.network/
+  * https://planq\_testnet\_rpc.chain.whenmoonwhenlambo.money/
 * **Cosmos RESTful**
   * https://rest-atlas.planq.network/
+  * https://planq\_testnet\_api.chain.whenmoonwhenlambo.money/
 * **Cosmos gRPC Based**
   * https://grpc-atlas.planq.network/
 
