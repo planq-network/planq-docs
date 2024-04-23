@@ -38,6 +38,10 @@ atplanq
 
 {% embed url="https://testnet-explorer.konsortech.xyz/planq" %}
 
+{% embed url="https://explorer.whenmoonwhenlambo.money/planq-testnet" %}
+
+{% embed url="https://evm-atlas.planq.network/" %}
+
 **Faucet**
 
 Please join our [Telegram](https://t.me/planqnetwork)
