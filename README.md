@@ -77,7 +77,7 @@ Blog: [Planq](https://medium.org/@planq)
 
 Socials: [Twitter](https://twitter.com/planqfoundation) | [Telegram](https://t.me/PlanqNetwork) | [Discord](https://discord.gg/planq-network) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
 
-White paper: [Planq Whitepaper](https://static.planq.network/whitepaper.pdf/)
+White paper: [Planq Whitepaper](planq-chain-protocol/whitepaper.md)
 
 Code repository: [GitHub](https://github.com/planq-network/planq)
 
