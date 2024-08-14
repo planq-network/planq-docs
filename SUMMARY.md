@@ -10,9 +10,11 @@
 
 * [🔥 Crypto Wallets](for-users/crypto-wallets.md)
 * [🦊 MetaMask Configuration](for-users/metamask.md)
+* [🏰 Castrum Wallet](for-users/keplr/README.md)
+  * [Castrum Wallet FAQ](for-users/keplr/castrum-wallet-faq.md)
 * [🦁 Brave Wallet](for-users/brave-wallet.md)
 * [🐸 Leap Wallet](for-users/leap-wallet.md)
-* [⚛️ Keplr wallet](for-users/keplr.md)
+* [⚛️ Keplr wallet](for-users/keplr-1.md)
 * [🌉 Bridges](for-users/bridge/README.md)
   * [IBC (Planq Chain, other Cosmos chains)](for-users/bridge/other\_chain.md)
   * [Deltaswapp WebApp (BSC, other EVM Chains)](for-users/bridge/deltaswap/README.md)
