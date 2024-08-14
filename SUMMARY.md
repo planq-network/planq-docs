@@ -12,6 +12,7 @@
 * [🦊 MetaMask Configuration](for-users/metamask.md)
 * [🏰 Castrum Wallet](for-users/keplr/README.md)
   * [Castrum Wallet FAQ](for-users/keplr/castrum-wallet-faq.md)
+  * [Supported Chains on Castrum](for-users/keplr/supported-chains-on-castrum.md)
 * [🦁 Brave Wallet](for-users/brave-wallet.md)
 * [🐸 Leap Wallet](for-users/leap-wallet.md)
 * [⚛️ Keplr wallet](for-users/keplr-1.md)
