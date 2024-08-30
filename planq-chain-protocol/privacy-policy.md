@@ -2,13 +2,7 @@
 
 In this Privacy Policy, Planq Dev B.V. (hereinafter: the ''Planq'', “us”, or ''we'') explains which Personal
 
-Data is collected when you use our services. This includes our mobile apps (hereinafter: the “App”), our website https://planq.network (hereinafter: the “Website”), and our platform [https://app.planq.network](https://app.planq.network) (hereinafter: the “Platform”). The App, Website and Platform are collectively also referred to as the
-
-“Services”. Planq values your privacy and the protection of your personal data. Personal data will
-
-therefore be processed carefully and in accordance with this Privacy Policy and applicable laws and
-
-regulations.
+Data is collected when you use our services. This includes our mobile apps (hereinafter: the “App”), our website https://planq.network (hereinafter: the “Website”), and our platform [https://app.planq.network](https://app.planq.network) (hereinafter: the “Platform”). The App, Website and Platform are collectively also referred to as the “Services”. Planq values your privacy and the protection of your personal data. Personal data will therefore be processed carefully and in accordance with this Privacy Policy and applicable laws and regulations.
 
 If you have any questions or wish to receive further information, please contact us using the contact details at the bottom of this Privacy Policy.
 
