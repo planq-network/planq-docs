@@ -86,4 +86,5 @@
   * [List of parameters](planq-chain-protocol/chain-details/parameters.md)
   * [Technical glossary](planq-chain-protocol/chain-details/technical-glossary.md)
   * [Protocol Documentation](planq-chain-protocol/chain-details/cosmos-grpc-docs.md)
+* [Privacy Policy](planq-chain-protocol/privacy-policy.md)
 * [Legacy Docs](https://legacy-docs.planq.network/)
