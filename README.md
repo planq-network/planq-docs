@@ -75,7 +75,7 @@ Website: [Planq](https://planq.network)
 
 Blog: [Planq](https://medium.org/@planq)
 
-Socials: [Twitter](https://twitter.com/planqfoundation) | [Telegram](https://t.me/PlanqNetwork) | [Discord](https://discord.gg/planq-network) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
+Socials: [Twitter](https://twitter.com/planqfoundation) | [Telegram](https://t.me/PlanqNetwork) | [Discord](https://discord.gg/planq-network) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU_wECYp2GpJtw/featured)
 
 White paper: [Planq Whitepaper](planq-chain-protocol/whitepaper.md)
 
@@ -86,6 +86,8 @@ Code repository: [GitHub](https://github.com/planq-network/planq)
 * [List of Dapps](https://dapp.space)
 * [DeFi ecosystem on Defillama](https://defillama.com/chain/Planq)
 * [Block explorer](https://evm.planq.network/)
+* [Download Castrum Wallet for Android](https://play.google.com/store/apps/details?id=app.castrum.core\&hl=nl)
+* [Download Castrum Wallet for Apple](https://apps.apple.com/nl/app/castrum-wallet/id6737052454)
 
 **Developer tips:**
 
