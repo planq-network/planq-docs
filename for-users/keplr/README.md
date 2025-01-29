@@ -9,8 +9,8 @@ description: >-
 
 **Step 1: Download Castrum from the Google play or apple store.**
 
-Download for Android here.\
-Download for Ios here.
+Download for Android here: [https://play.google.com/store/apps/details?id=app.castrum.core\&hl=nl](https://play.google.com/store/apps/details?id=app.castrum.core\&hl=nl)\
+Download for Ios here: [https://apps.apple.com/nl/app/castrum-wallet/id6737052454?platform=iphone](https://apps.apple.com/nl/app/castrum-wallet/id6737052454?platform=iphone)
 
 **Step 2: Open the app and Choose a password.**
 
@@ -35,26 +35,10 @@ The password needs to be at least 9 characters. Make sure to save this password 
 3. **Import account**\
    Importing an account in Castrum wallet involves using a seed phrase or private key from an existing wallet to access it via Castrum. This process allows you to restore your account and manage your assets without creating a new wallet. The imported account retains all its previous assets and transaction history.
 
-<div>
-
-<figure><img src="../../.gitbook/assets/image (28).png" alt="" width="375"><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/image (28).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 **Step 4: Welcome to Castrum!**
 
 You are now fully done! Welcome to Castrum. To read more about the features of Castrum visit the ''Castrum Features section''. On the top right, you can change to different chains
 
-<div>
-
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/b3f741a7-9417-4d75-afdd-9bdc575ef867.jfif" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/b3f741a7-9417-4d75-afdd-9bdc575ef867.jfif" alt=""><figcaption></figcaption></figure></div>
